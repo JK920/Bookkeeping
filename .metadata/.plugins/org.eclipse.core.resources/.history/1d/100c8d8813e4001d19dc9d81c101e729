@@ -1,0 +1,148 @@
+package com.cts.project.tables.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.DirtiesContext;
+
+import com.cts.project.bookkeeping.TablesApplication;
+import com.cts.project.bookkeeping.entities.Account;
+import com.cts.project.bookkeeping.entities.Customers;
+import com.cts.project.bookkeeping.entities.Invoice;
+import com.cts.project.bookkeeping.entities.Journal;
+import com.cts.project.bookkeeping.entities.Ledger;
+import com.cts.project.bookkeeping.entities.Users;
+import com.cts.project.bookkeeping.entities.Vendors;
+import com.cts.project.bookkeeping.exception.JournalNotFoundException;
+import com.cts.project.bookkeeping.exception.UserNotFoundException;
+import com.cts.project.bookkeeping.model.AccountType;
+import com.cts.project.bookkeeping.model.JournalModel;
+import com.cts.project.bookkeeping.repository.JournalRepository;
+import com.cts.project.bookkeeping.repository.LedgerRepository;
+import com.cts.project.bookkeeping.service.AccountService;
+import com.cts.project.bookkeeping.service.CustomersService;
+import com.cts.project.bookkeeping.service.InvoiceService;
+import com.cts.project.bookkeeping.service.JournalService;
+import com.cts.project.bookkeeping.service.UsersService;
+import com.cts.project.bookkeeping.service.VendorsService;
+
+
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(classes = TablesApplication.class)
+@DirtiesContext
+class JournalServiceTest {
+
+
+	@Mock
+	JournalRepository jR;
+	@Mock
+	LedgerRepository lR;
+	@Mock
+	UsersService uS;
+	@Mock
+	AccountService aS;
+	@Mock
+	CustomersService cS;
+	@Mock
+	VendorsService vS;
+	@Mock
+	InvoiceService iS;
+	@InjectMocks
+	JournalService jS;
+
+	private JournalModel jm;
+	private Users u;
+	private Account a;
+	private Customers c;
+	private Vendors v;
+	private Invoice i;
+	private Journal j;
+	private Ledger l;
+	
+	@BeforeEach
+	public void setup() {
+		u = new Users("User", "username", "pass", "email", "company");
+		u.setUserId("u1");
+		a = new Account("a", AccountType.ASSET, 0);
+		a.setAccountId("a1");
+		c = new Customers(u, "Sam", "Cochin", "987654321","sam@email.com");
+		c.setCustomerId("c");
+		v = new Vendors(u, "Ram", "Cochin", "987654321","ram@email.com");
+		v.setVendorId("v");
+		i= new Invoice("i1", u, LocalDate.now(), LocalDate.now(), u.getCompanyName(), c.getName(), 0, 0, false);
+		j = new Journal(LocalDate.now(), "", "", 0, 0);
+		j.setJournalId("j1");
+		j.setUser(u);
+		j.setAccount(a);
+		j.setInvoice(i);
+		l = new Ledger();
+		l.setAccount(a);
+		l.setJournal(j);
+		u.setJournalList(List.of(j));
+		
+	}
+	
+	@Test
+	void testCreateJournal_CustomerModel() throws RuntimeException {
+		j.setCustomer(c);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), "", c.getName(), 0, 0);
+		when(uS.getUserById("u1")).thenReturn(u);
+		when(aS.getAccountByName("a", "u")).thenReturn(a);
+		when(cS.getCustomerByName("Sam", "u")).thenReturn(c);
+		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
+		when(jR.save(any(Journal.class))).thenReturn(j);
+		Journal j1 = jS.createJournalEntry(jm);
+		assertEquals(j, j1);
+	}
+	
+	@Test
+	void testCreateJournal_VendorModel() throws RuntimeException  {
+		j.setVendor(v);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), v.getName(), "", 0, 0);
+		when(uS.getUserById("u1")).thenReturn(u);
+		when(aS.getAccountByName("a", "u")).thenReturn(a);
+		when(vS.getVendorByName("Ram", "u1")).thenReturn(v);
+		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
+		when(jR.save(any(Journal.class))).thenReturn(j);
+		Journal j1 = jS.createJournalEntry(jm);
+		assertEquals(j, j1);
+	}
+	
+	@Test
+	void testCreateJournal_NotFound() throws RuntimeException  {
+		j.setVendor(v);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), v.getName(), "", 0, 0);
+		when(uS.getUserById("u1")).thenThrow(UserNotFoundException.class);
+		when(aS.getAccountByName("a", "u")).thenReturn(a);
+		when(vS.getVendorByName("Ram", "u1")).thenReturn(v);
+		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
+		when(jR.save(any(Journal.class))).thenReturn(j);
+		assertThrows(UserNotFoundException.class, ()-> jS.createJournalEntry(jm));
+	}
+	
+	@Test
+	void testGetJournalById() throws JournalNotFoundException{
+		when(uS.getUserById("u1")).thenReturn(u);
+		assertEquals(j, jS.getJournalById("j1", "u1"));
+		
+	}
+	
+	@Test
+	void testGetJournalById_JournalNotFound() throws JournalNotFoundException{
+		when(uS.getUserById("u1")).thenReturn(u);
+		assertThrows(JournalNotFoundException.class, ()-> jS.getJournalById("j2", "u1"));
+		
+	}
+	
+}

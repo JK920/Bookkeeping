@@ -1,0 +1,8 @@
+package com.repository;
+
+//Provide necessary Annotation
+public interface AccountRepository  {
+	
+	//Provide necessary method to view Account with balance greater than or equal to a value 
+
+}

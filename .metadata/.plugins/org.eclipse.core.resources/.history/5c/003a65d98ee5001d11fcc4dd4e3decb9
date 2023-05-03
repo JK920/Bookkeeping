@@ -1,0 +1,57 @@
+package com.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.entities.BankTransaction;
+import com.exception.InvalidBankTransactionException;
+import com.repository.AccountRepository;
+import com.repository.TransactionRepository;
+
+//Provide necessary Annotation
+@Component
+public class TransactionDAOImpl implements ITransactionDAO {
+	
+	//Provide code to Inject TransactionRepository and AccountRepository
+	//Provide code to Inject AccountRepository, if needed
+	@Autowired
+	TransactionRepository tRepo;
+	
+	@Autowired
+	AccountRepository aRepo;
+	
+	@Override
+	public BankTransaction insertTransaction(BankTransaction transactionObj,String accountNumber) throws InvalidBankTransactionException{
+		
+		//fill code
+		
+		return null;
+	}
+	
+	@Override
+	public List<BankTransaction> viewTransactionByAccountNumber(String accountNumber) throws InvalidBankTransactionException
+	{
+		//fill code
+		
+		return null;	
+	}
+	
+	@Override
+	public List<BankTransaction> viewTransactionByTransactionType(String transactionType)
+	{
+		//fill code
+		
+		return null;	
+	}
+	
+	@Override
+	public List<BankTransaction> viewTransactionByTransactionTypeAndAmount(String transactionType,double amount)
+	{
+		//fill code
+		
+		return null;	
+	}
+
+}

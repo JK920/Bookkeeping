@@ -1,0 +1,55 @@
+package com.restaurant.model;
+
+import java.time.LocalDate;
+
+
+
+public class BookTable {
+	private String bookingId;
+	
+	
+	private String customerName;
+	private String mobileNumber;
+	
+	private Integer totalGuestCount;
+	
+	private Integer totalAdultVegCount;
+	
+	private Integer totalAdultNonVegCount;
+	
+	private Integer totalKidsVegCount;
+	
+	private Integer totalKidsNonVegCount;
+	
+	
+	private LocalDate bookingDate;
+	private Double totalBillAmount;
+	
+	
+	public BookTable(String bookingId, String customerName, String mobileNumber, Integer totalGuestCount,
+			Integer totalAdultVegCount, Integer totalAdultNonVegCount, Integer totalKidsVegCount,
+			Integer totalKidsNonVegCount, LocalDate bookingDate, Double totalBillAmount) {
+		super();
+		this.bookingId = bookingId;
+		this.customerName = customerName;
+		this.mobileNumber = mobileNumber;
+		this.totalGuestCount = totalGuestCount;
+		this.totalAdultVegCount = totalAdultVegCount;
+		this.totalAdultNonVegCount = totalAdultNonVegCount;
+		this.totalKidsVegCount = totalKidsVegCount;
+		this.totalKidsNonVegCount = totalKidsNonVegCount;
+		this.bookingDate = bookingDate;
+		this.totalBillAmount = totalBillAmount;
+	}
+	
+	
+	public BookTable() {
+		
+	}
+	
+	
+	
+	
+	
+
+}

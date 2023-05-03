@@ -1,0 +1,117 @@
+package com.restaurant.service;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map.Entry;
+
+import org.springframework.stereotype.Service;
+
+import com.restaurant.exception.BookTableInvalidException;
+import com.restaurant.model.BookTable;
+
+import lombok.extern.slf4j.Slf4j;
+
+
+@Service
+@Slf4j
+public class RestaurantServiceImpl implements IRestaurantService {
+	
+
+	private static List<BookTable> bookList=new ArrayList<BookTable>();
+	
+	public static List<BookTable> getBookList() {
+		return bookList;
+	}
+
+	public static void setBookList(List<BookTable> bookList) {
+		RestaurantServiceImpl.bookList = bookList;
+	}
+	
+	public RestaurantServiceImpl()
+	{
+	
+	}
+
+	@Override
+	public BookTable bookATable(BookTable obj) throws BookTableInvalidException {
+		
+		String regex= "[6-9][0-9]{9}";
+		if(!obj.getMobileNumber().matches(regex)) {
+			
+			log.error("Enter a valid mobile number");
+			throw new BookTableInvalidException("Enter a valid mobile number");
+		}
+
+		bookList.add(obj);
+		log.info("Custmer with id "+obj.getBookingId()+" booked successfully");
+			
+			return obj;
+
+	}
+
+	@Override
+	public BookTable calculateBill(String bookingId) {
+		BookTable bObj = null;
+		for(BookTable b:bookList) {
+			if(b.getBookingId().equals(bookingId)) {
+				b.setTotalBillAmount((double)(b.getTotalAdultVegCount()*599)+(b.getTotalKidsVegCount()*249)+(b.getTotalAdultNonVegCount()*699)+(b.getTotalKidsNonVegCount()*349));
+				bObj=b;
+			}
+		}
+		log.info("Transaction completed successfully");
+		return bObj;
+	}
+
+	@Override
+	public List<BookTable> viewBookingOnAParticularDate(LocalDate dateRequired) throws BookTableInvalidException {
+		
+		
+		List<BookTable> bList=new ArrayList<BookTable>();
+		for (BookTable t:bookList){
+			System.out.println(t.getBookingDate()+"          "+dateRequired);
+			if(t.getBookingDate().equals(dateRequired)) {
+				bList.add(t);
+			}
+		if(bList.size()==0) {
+			
+			log.error("No bookings available on the given date");
+			throw new BookTableInvalidException ("No bookings available on the given date");
+		}
+		
+		log.info("View booking on a particular date is successfully done");
+		return bList;
+	
+		}
+	}
+
+	@Override
+	public List<String> findStarRatedCustomer() {
+		HashMap<String, Integer> hm = new HashMap<>();
+		ArrayList<String> sL = new ArrayList<>();
+		int maxCounter = 0;
+		String result  = null;
+		for(int i=0;i<bookList.size();i++) {
+			if(!hm.containsKey(bookList.get(i).getMobileNumber())) {
+				int counter = i;
+				for(int j=i+1;j<bookList.size();j++) {
+					if(bookList.get(i).getMobileNumber().equals(bookList.get(j).getMobileNumber())) {
+						counter++;
+					}
+				}
+				hm.put(bookList.get(i).getMobileNumber(), counter);
+				if(maxCounter<counter) {
+					maxCounter=counter;
+				}
+			}
+		}
+		for(Entry<String, Integer> es:hm.entrySet()) {
+			if(es.getValue()==maxCounter)
+				sL.add(es.getKey());
+		}
+		log.info("Find star rated customer is successful");
+		return sL;
+	}
+
+}

@@ -1,0 +1,76 @@
+package com.cts.project.tables.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.RequestBuilder;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import com.cts.project.bookkeeping.controller.AccountController;
+import com.cts.project.bookkeeping.controller.InvoiceController;
+import com.cts.project.bookkeeping.entities.Account;
+import com.cts.project.bookkeeping.entities.Invoice;
+import com.cts.project.bookkeeping.entities.Users;
+import com.cts.project.bookkeeping.model.AccountModel;
+import com.cts.project.bookkeeping.model.InvoiceModel;
+import com.cts.project.bookkeeping.service.AccountService;
+import com.cts.project.bookkeeping.service.InvoiceService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+class InvoiceControllerTest {
+
+	@Autowired
+	private MockMvc mockMvc;
+
+	
+	@Autowired
+    private ObjectMapper objectMapper;
+	
+	@MockBean
+	private InvoiceService iS;
+	
+	@InjectMocks
+	InvoiceController iC;
+	
+	private InvoiceModel im;
+	private Invoice i;
+	private Users u;
+	@BeforeEach
+	void setUp() throws Exception {
+		
+		im = new InvoiceModel("u1", "i1", LocalDate.now(), LocalDate.now(), "company", "customer", 2.0, 1000, 10, false);
+		i = new Invoice(im.getInvoiceId(), u, im.getInvoiceDate(), im.getDueDate(), im.getBilledBy(), im.getBilledTo(), im.getTaxPercentage(), im.getTotalAmount(),false);
+		
+	}
+
+	@Test
+	void testAddInvoice() throws Exception {
+		when(iS.addInvoice(any(InvoiceModel.class))).thenReturn(i);
+		String exp = objectMapper.writeValueAsString(i);
+		RequestBuilder requestBuilder = MockMvcRequestBuilders
+				.post("/create/invoice")
+				.accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(im))
+				.contentType(MediaType.APPLICATION_JSON);
+		
+		MvcResult result = mockMvc.perform(requestBuilder).andReturn();
+		
+		MockHttpServletResponse response = result.getResponse();
+		String actual = response.getContentAsString();
+		assertEquals(200, response.getStatus());
+		assertEquals(exp, actual);
+	}
+
+}

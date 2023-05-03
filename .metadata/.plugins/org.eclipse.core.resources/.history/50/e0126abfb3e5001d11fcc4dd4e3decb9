@@ -1,0 +1,2 @@
+server.port=9090
+logging.config=src/main/resources/logger.xml

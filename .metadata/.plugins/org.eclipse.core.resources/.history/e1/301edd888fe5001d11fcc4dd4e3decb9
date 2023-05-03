@@ -1,0 +1,47 @@
+package com.service;
+
+import java.util.List;
+
+import com.dao.IAccountDAO;
+import com.entities.Account;
+import com.exception.InvalidAccountException;
+
+//Provide necessary Annotation
+public class AccountServiceImpl implements IAccountService {
+	
+	
+	//Provide necessary Annotation
+	IAccountDAO accountDAO;
+
+	@Override
+	public Account openAccount(Account account) {
+		
+		//fill code
+		
+		return null;
+	}
+	
+	@Override
+	public Account updateAccountHolderPhoneNumber(String accountNumber,String phoneNumber) throws InvalidAccountException {
+
+		//fill code
+		
+		return null;
+	}
+	
+	@Override
+	public Account viewAccountByAccountNumber(String accountNumber) throws InvalidAccountException {
+
+		//fill code
+		
+		return null;		
+	}
+	
+	@Override
+	public List<Account> viewAccountByBalance(double balance) {
+
+		//fill code
+		
+		return null;
+	}
+}

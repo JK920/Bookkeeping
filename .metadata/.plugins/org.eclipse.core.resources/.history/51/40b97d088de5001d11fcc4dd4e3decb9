@@ -1,0 +1,10 @@
+package com.repository;
+
+//Provide necessary Annotation
+public interface TransactionRepository {
+
+	//Provide necessary method to view transactions based on Account number,
+	// view transactions based on transaction type and
+	// view transactions based on transaction type and transaction amount greater than or equal to a value	
+	
+}

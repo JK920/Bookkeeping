@@ -1,0 +1,42 @@
+package com.restaurant.controller;
+
+
+
+import java.util.List;
+
+import com.restaurant.exception.BookTableInvalidException;
+import com.restaurant.model.BookTable;
+
+public class RestaurantController {
+	
+	
+	
+	
+	public BookTable bookATable( BookTable bookObj) throws BookTableInvalidException {
+		return null;
+	}
+
+	
+	
+	public BookTable calculateBill(String bookingId){
+
+		return null;
+	}
+	
+	
+	public List<BookTable> viewBookingOnAParticularDate( String dateRequired) throws BookTableInvalidException {
+		return null;
+		
+	}
+	
+
+	
+	public List<String> findStarRatedCustomer(){
+
+		return null;
+	}
+
+	
+
+
+}

@@ -1,0 +1,10 @@
+package com.repository;
+
+import org.springframework.stereotype.Repository;
+
+//Provide necessary Annotation
+@Repository
+public interface AccountRepository  {
+	
+	//Provide necessary method to view Account with balance greater than or equal to a value 
+}
