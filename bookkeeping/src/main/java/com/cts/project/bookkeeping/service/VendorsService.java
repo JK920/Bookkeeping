@@ -1,6 +1,5 @@
 package com.cts.project.bookkeeping.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +13,7 @@ import com.cts.project.bookkeeping.model.VendorModel;
 import com.cts.project.bookkeeping.repository.VendorsRepository;
 
 import jakarta.transaction.Transactional;
-import lombok.extern.java.Log;
 
-@Log
 @Service
 public class VendorsService {
 
