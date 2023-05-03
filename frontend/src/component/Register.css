@@ -1,0 +1,22 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 50%;
+}
+.btn{
+    margin-top: 10px;
+}
+.center{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.pad{
+    line-height: 40px;
+}
+.container{
+    margin-top: 200px;
+    
+}

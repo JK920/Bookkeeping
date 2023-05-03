@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgba(0,0,0,0); 
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+#mainNav{
+    position: relative;
+}
+li{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

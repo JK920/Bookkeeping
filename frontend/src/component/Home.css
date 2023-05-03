@@ -1,0 +1,17 @@
+.top{
+    background-image: url(./images/top.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    color: white;
+}
+.mainH1{
+    font-size: 5rem;
+    
+}
+.mainContent{
+    margin-top: 10rem;
+}
+
