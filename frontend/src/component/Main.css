@@ -1,0 +1,15 @@
+.sideMenu{
+    float: left;
+    width: 20%;
+    margin-left: 5rem;
+}
+.dash{
+    float: left;
+    width: 70%;
+}
+.section1{
+    margin-left: 0%;
+}
+#main{
+    margin-top: 2rem;
+}

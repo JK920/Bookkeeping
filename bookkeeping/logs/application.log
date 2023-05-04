@@ -12615,3 +12615,113 @@ List of constraint violations:[
 		                HikariPool-6 - Shutdown initiated...
 01-05-23 10:26:26.701 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
 		                HikariPool-6 - Shutdown completed.
+04-05-23 13:26:42.038 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 4608 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+04-05-23 13:26:42.040 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+04-05-23 13:26:45.608 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+04-05-23 13:26:46.155 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d3a548b
+04-05-23 13:26:46.159 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+04-05-23 13:26:51.864 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 10.29 seconds (process running for 11.23)
+04-05-23 13:44:03.592 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 4772 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+04-05-23 13:44:03.594 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+04-05-23 13:44:07.115 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+04-05-23 13:44:07.655 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7783ea19
+04-05-23 13:44:07.660 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+04-05-23 13:44:12.673 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 9.815 seconds (process running for 10.86)
+04-05-23 13:45:16.385 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 13:45:16.525 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 13:45:30.296 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 13:53:19.009 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 13:53:19.091 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 13:53:50.516 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:05:42.731 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:05:54.127 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:39:22.798 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:40:08.549 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:41:13.716 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:41:50.264 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:44:18.642 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:45:00.377 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:45:10.066 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:45:46.589 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:46:11.418 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 14:49:09.415 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 14:49:09.477 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 14:51:08.449 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 14:51:08.523 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 15:14:30.543 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+04-05-23 15:14:36.083 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+04-05-23 15:14:41.896 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                User not found
+04-05-23 15:15:08.494 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                User not found
+04-05-23 15:39:11.215 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 19708 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+04-05-23 15:39:11.217 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+04-05-23 15:39:15.385 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+04-05-23 15:39:15.941 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ad81c4a
+04-05-23 15:39:15.944 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+04-05-23 15:39:21.755 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 11.125 seconds (process running for 12.285)
+04-05-23 15:48:36.822 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 15:48:36.931 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 15:48:43.608 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 15:51:40.750 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 15:51:40.848 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 15:52:28.861 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+04-05-23 16:08:00.366 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                User created
+04-05-23 16:08:00.544 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+04-05-23 16:09:16.368 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+04-05-23 16:09:22.521 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                User not found
+04-05-23 16:09:32.758 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                User not found
+04-05-23 16:09:37.490 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
