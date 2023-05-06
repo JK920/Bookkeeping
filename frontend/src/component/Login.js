@@ -37,16 +37,18 @@ export default class Login extends Component{
     }
     render(){
         return(
-            <div className='container'>
+            <div className='container-fluid top'>
+                <div className='align'>
                 <h1>Login</h1>
                 <div className='center'>
                     <form onSubmit={this.submitHandler}>
-                        <label className='from-label pad'>Username</label>
+                        <label className='form-label pad'>Username</label>
                         <input type='text' value={this.state.username} onChange={this.handleUsernameChange} className='form-control' />
-                        <label className='from-label pad'>Password</label>
+                        <label className='form-label pad'>Password</label>
                         <input type='password' value={this.state.password} onChange={this.handlePasswordChange} className='form-control'/>
                         <button type='submit' className='btn btn-primary'>Login</button>
                     </form>
+                </div>
                 </div>
             </div>
         );

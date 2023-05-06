@@ -16,7 +16,9 @@ form{
 .pad{
     line-height: 40px;
 }
-.container{
-    margin-top: 200px;
-    
+.container-fluid{
+    padding: 0px 100px 0 100px;
+}
+.align{
+    padding-top: 7rem;
 }

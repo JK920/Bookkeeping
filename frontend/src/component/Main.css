@@ -1,15 +1,26 @@
+
+
 .sideMenu{
     float: left;
     width: 20%;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 .dash{
     float: left;
     width: 70%;
 }
 .section1{
-    margin-left: 0%;
+    margin-left: 10%;
 }
 #main{
     margin-top: 2rem;
+}
+img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 3px;
+}
+.btn-toggle{
+    width: 70%;
 }

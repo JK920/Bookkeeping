@@ -1,21 +1,18 @@
 import React, {Component} from "react";
 import './Home.css';
 import Navbar from "./Navbar";
+import HomeContent from "./HomeContent";
+import Register from "./Register";
+import Login from "./Login";
+import { Outlet } from "react-router-dom";
+
 export default class Home extends Component{
     render(){
         return(
             <div className="container-fluid top">
                 <Navbar/>
-                <div className="mainContent">
-                    <h1 className="mainH1">Books</h1>
-                    < h4>Books is an application that aims at simplifying the continuos process of bookkeeping for small business.</h4>
-                    <div>
-                        <button className="btn btn-lg btn-dark mainBtn">Login</button>
-                        <button className="btn btn-lg btn-light mainBtn">Register</button>
-                    </div>
-                </div>
+                <Outlet/>
             </div>
-
         );
     }
 }

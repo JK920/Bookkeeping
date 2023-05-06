@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import './Navbar.css';
 import "bootstrap/js/src/collapse.js";
+import './Navbar.css';
 export default class Navbar extends Component{
     render(){
         return(
@@ -11,10 +11,11 @@ export default class Navbar extends Component{
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item"><a className="nav-link" href="#Home">Home</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                         <li className="nav-item"><a className="nav-link" href="#About">About</a></li>
                         <li className="nav-item"><a className="nav-link" href="#Help">Help</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#Register">Register</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/login">Login</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/register">Register</a></li>
                     </ul>
                 </div>
         </nav>
