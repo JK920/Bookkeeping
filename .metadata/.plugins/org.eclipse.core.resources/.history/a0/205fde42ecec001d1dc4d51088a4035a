@@ -1,0 +1,5 @@
+package com.cts.project.bookkeeping.model;
+
+public class AccountLedger {
+
+}

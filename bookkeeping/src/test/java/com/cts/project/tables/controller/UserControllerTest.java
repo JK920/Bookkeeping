@@ -82,9 +82,9 @@ class UserControllerTest {
 	
 	@Test
 	void testLoginUser() throws Exception {
-		String exp = "Login successfull";
+		String exp = objectMapper.writeValueAsString(u);
 		LoginModel l = new LoginModel("username","pass");
-		when(uS.login(any(LoginModel.class))).thenReturn(exp);
+		when(uS.login(any(LoginModel.class))).thenReturn(u);
 		
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
 				.post("/login/user")

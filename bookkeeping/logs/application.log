@@ -12767,3 +12767,1079 @@ List of constraint violations:[
 		                User created
 05-05-23 15:32:51.738 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
 		                Default Accounts Created
+07-05-23 20:31:22.335 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Starting UsersServiceTest using Java 17.0.5 with PID 12732 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:31:22.341 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:31:27.963 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:31:28.954 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4df0d9f8
+07-05-23 20:31:28.962 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:31:37.608 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Started UsersServiceTest in 16.084 seconds (process running for 19.418)
+07-05-23 20:31:38.216 [main] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 20:31:38.376 [main] INFO  c.c.p.b.service.UsersService -
+		                User created
+07-05-23 20:31:38.379 [main] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+07-05-23 20:31:38.400 [main] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+07-05-23 20:31:38.433 [main] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 20:31:38.480 [main] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 20:31:38.558 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:31:38.591 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:33:14.006 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Starting UsersServiceTest using Java 17.0.5 with PID 18412 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:33:14.010 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:33:19.028 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:33:19.808 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@627bcd7e
+07-05-23 20:33:19.818 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:33:27.981 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Started UsersServiceTest in 14.638 seconds (process running for 17.296)
+07-05-23 20:33:28.734 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:33:28.765 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:38:01.455 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Starting UsersServiceTest using Java 17.0.5 with PID 11164 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:38:01.459 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:38:06.182 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:38:07.044 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aac81ca
+07-05-23 20:38:07.053 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:38:15.118 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Started UsersServiceTest in 14.292 seconds (process running for 16.976)
+07-05-23 20:38:15.887 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:38:15.979 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:38:16.015 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:38:26.178 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Starting UsersServiceTest using Java 17.0.5 with PID 13848 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:38:26.182 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:38:31.013 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:38:31.893 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1008df1e
+07-05-23 20:38:31.901 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:38:39.996 [main] INFO  c.c.p.t.service.UsersServiceTest -
+		                Started UsersServiceTest in 14.417 seconds (process running for 17.118)
+07-05-23 20:38:41.312 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:38:41.508 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:38:41.543 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:38:59.535 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 2616 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:38:59.538 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:39:05.753 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:39:06.454 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d883022
+07-05-23 20:39:06.462 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:39:15.255 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 16.492 seconds (process running for 18.145)
+07-05-23 20:40:21.564 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                User created
+07-05-23 20:40:21.783 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+07-05-23 20:40:51.857 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:40:58.212 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 20:41:04.729 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 20:46:55.326 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Starting UserControllerTest using Java 17.0.5 with PID 13624 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:46:55.330 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:00.909 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:47:01.680 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45539bd8
+07-05-23 20:47:01.686 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:47:09.432 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Started UserControllerTest in 14.736 seconds (process running for 17.696)
+07-05-23 20:47:09.982 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:47:10.013 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:47:23.996 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Starting AccountControllerTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:24.005 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:29.272 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:47:30.024 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64540344
+07-05-23 20:47:30.031 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:47:37.429 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Started AccountControllerTest in 14.255 seconds (process running for 17.819)
+07-05-23 20:47:38.634 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Starting UserControllerTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:38.635 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:39.348 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+07-05-23 20:47:39.376 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@420849f6
+07-05-23 20:47:39.377 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+07-05-23 20:47:41.184 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Started UserControllerTest in 2.598 seconds (process running for 21.575)
+07-05-23 20:47:41.487 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Starting VendorControllerTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:41.488 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:42.158 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+07-05-23 20:47:42.181 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c1348c6
+07-05-23 20:47:42.182 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+07-05-23 20:47:43.616 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Started VendorControllerTest in 2.196 seconds (process running for 24.007)
+07-05-23 20:47:43.790 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Starting CustomerControllerTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:43.791 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:44.469 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+07-05-23 20:47:44.494 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@687dc7e6
+07-05-23 20:47:44.494 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+07-05-23 20:47:45.909 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Started CustomerControllerTest in 2.165 seconds (process running for 26.3)
+07-05-23 20:47:46.092 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Starting InvoiceControllerTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:46.093 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:46.752 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Starting...
+07-05-23 20:47:46.776 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@396d21ec
+07-05-23 20:47:46.777 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Start completed.
+07-05-23 20:47:48.093 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Started InvoiceControllerTest in 2.047 seconds (process running for 28.484)
+07-05-23 20:47:48.313 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Starting JournalControllerTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:48.314 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:48.870 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Starting...
+07-05-23 20:47:48.894 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cb6c8a6
+07-05-23 20:47:48.894 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Start completed.
+07-05-23 20:47:50.069 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Started JournalControllerTest in 1.807 seconds (process running for 30.46)
+07-05-23 20:47:50.196 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Starting TablesApplicationTests using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:50.197 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:50.701 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Starting...
+07-05-23 20:47:50.729 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44f6c323
+07-05-23 20:47:50.729 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Start completed.
+07-05-23 20:47:51.818 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Started TablesApplicationTests in 1.652 seconds (process running for 32.209)
+07-05-23 20:47:52.111 [main] INFO  c.c.p.b.service.UsersService -
+		                User created
+07-05-23 20:47:52.114 [main] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+07-05-23 20:47:52.125 [main] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+07-05-23 20:47:52.144 [main] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 20:47:52.173 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:47:52.197 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown initiated...
+07-05-23 20:47:52.210 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown completed.
+07-05-23 20:47:52.265 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Starting VendorServiceTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:52.266 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:52.789 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Starting...
+07-05-23 20:47:52.810 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c95bb3c
+07-05-23 20:47:52.810 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Start completed.
+07-05-23 20:47:53.942 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Started VendorServiceTest in 1.72 seconds (process running for 34.333)
+07-05-23 20:47:54.161 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown initiated...
+07-05-23 20:47:54.183 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown completed.
+07-05-23 20:47:54.272 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Starting CustomerServiceTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:54.273 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:54.759 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Starting...
+07-05-23 20:47:54.778 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4969b90d
+07-05-23 20:47:54.779 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Start completed.
+07-05-23 20:47:55.950 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Started CustomerServiceTest in 1.749 seconds (process running for 36.34)
+07-05-23 20:47:56.135 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown initiated...
+07-05-23 20:47:56.146 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown completed.
+07-05-23 20:47:56.198 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:56.199 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:56.608 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Starting...
+07-05-23 20:47:56.627 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@577c2d74
+07-05-23 20:47:56.627 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Start completed.
+07-05-23 20:47:57.557 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 1.398 seconds (process running for 37.947)
+07-05-23 20:47:57.945 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown initiated...
+07-05-23 20:47:57.957 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown completed.
+07-05-23 20:47:58.020 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Starting InvoiceServiceTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:58.021 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:47:58.527 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Starting...
+07-05-23 20:47:58.550 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34abbd8d
+07-05-23 20:47:58.551 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Start completed.
+07-05-23 20:47:59.460 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Started InvoiceServiceTest in 1.488 seconds (process running for 39.85)
+07-05-23 20:47:59.631 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown initiated...
+07-05-23 20:47:59.645 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown completed.
+07-05-23 20:47:59.708 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Starting JournalServiceTest using Java 17.0.5 with PID 19152 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:47:59.709 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:48:00.397 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Starting...
+07-05-23 20:48:00.413 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fa957c2
+07-05-23 20:48:00.414 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Start completed.
+07-05-23 20:48:01.301 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Started JournalServiceTest in 1.641 seconds (process running for 41.692)
+07-05-23 20:48:01.310 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 20:48:01.337 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 20:48:01.388 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown initiated...
+07-05-23 20:48:01.396 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown completed.
+07-05-23 20:48:01.400 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:48:01.414 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:48:01.417 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+07-05-23 20:48:01.427 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+07-05-23 20:48:01.430 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+07-05-23 20:48:01.440 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+07-05-23 20:48:01.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown initiated...
+07-05-23 20:48:01.458 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown completed.
+07-05-23 20:48:01.461 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown initiated...
+07-05-23 20:48:01.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown completed.
+07-05-23 20:48:01.476 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown initiated...
+07-05-23 20:48:01.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown completed.
+07-05-23 20:50:06.478 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Starting AccountControllerTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:06.481 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:13.776 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:50:14.879 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5aede1ef
+07-05-23 20:50:14.890 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:50:23.753 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Started AccountControllerTest in 18.377 seconds (process running for 24.752)
+07-05-23 20:50:24.878 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Starting UserControllerTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:24.879 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:25.925 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+07-05-23 20:50:25.955 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2636e422
+07-05-23 20:50:25.956 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+07-05-23 20:50:27.686 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Started UserControllerTest in 2.878 seconds (process running for 28.685)
+07-05-23 20:50:27.864 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Starting VendorControllerTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:27.865 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:28.502 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+07-05-23 20:50:28.535 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ca77862
+07-05-23 20:50:28.536 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+07-05-23 20:50:29.901 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Started VendorControllerTest in 2.071 seconds (process running for 30.9)
+07-05-23 20:50:30.183 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Starting CustomerControllerTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:30.184 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:30.739 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+07-05-23 20:50:30.759 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c680a50
+07-05-23 20:50:30.760 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+07-05-23 20:50:32.084 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Started CustomerControllerTest in 1.951 seconds (process running for 33.083)
+07-05-23 20:50:32.317 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Starting InvoiceControllerTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:32.318 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:33.002 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Starting...
+07-05-23 20:50:33.029 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@727a3881
+07-05-23 20:50:33.030 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Start completed.
+07-05-23 20:50:34.314 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Started InvoiceControllerTest in 2.047 seconds (process running for 35.313)
+07-05-23 20:50:34.559 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Starting JournalControllerTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:34.560 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:35.098 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Starting...
+07-05-23 20:50:35.115 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2211be66
+07-05-23 20:50:35.115 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Start completed.
+07-05-23 20:50:36.326 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Started JournalControllerTest in 1.824 seconds (process running for 37.324)
+07-05-23 20:50:36.526 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Starting TablesApplicationTests using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:36.527 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:37.041 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Starting...
+07-05-23 20:50:37.069 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ece90df
+07-05-23 20:50:37.069 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Start completed.
+07-05-23 20:50:38.207 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Started TablesApplicationTests in 1.724 seconds (process running for 39.206)
+07-05-23 20:50:38.489 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:50:38.563 [main] INFO  c.c.p.b.service.UsersService -
+		                User created
+07-05-23 20:50:38.565 [main] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+07-05-23 20:50:38.584 [main] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+07-05-23 20:50:38.618 [main] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 20:50:38.668 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:50:38.701 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown initiated...
+07-05-23 20:50:38.722 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown completed.
+07-05-23 20:50:38.806 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Starting VendorServiceTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:38.807 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:39.254 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Starting...
+07-05-23 20:50:39.272 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2dc601d1
+07-05-23 20:50:39.272 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Start completed.
+07-05-23 20:50:40.741 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Started VendorServiceTest in 1.996 seconds (process running for 41.74)
+07-05-23 20:50:41.000 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown initiated...
+07-05-23 20:50:41.015 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown completed.
+07-05-23 20:50:41.109 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Starting CustomerServiceTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:41.110 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:41.753 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Starting...
+07-05-23 20:50:41.779 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d902e0d
+07-05-23 20:50:41.780 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Start completed.
+07-05-23 20:50:42.906 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Started CustomerServiceTest in 1.868 seconds (process running for 43.906)
+07-05-23 20:50:43.132 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown initiated...
+07-05-23 20:50:43.143 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown completed.
+07-05-23 20:50:43.214 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:43.215 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:43.716 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Starting...
+07-05-23 20:50:43.736 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2433ea91
+07-05-23 20:50:43.737 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Start completed.
+07-05-23 20:50:44.902 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 1.741 seconds (process running for 45.902)
+07-05-23 20:50:45.342 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown initiated...
+07-05-23 20:50:45.353 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown completed.
+07-05-23 20:50:45.422 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Starting InvoiceServiceTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:45.422 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:45.916 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Starting...
+07-05-23 20:50:45.943 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b07ea10
+07-05-23 20:50:45.944 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Start completed.
+07-05-23 20:50:47.094 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Started InvoiceServiceTest in 1.726 seconds (process running for 48.092)
+07-05-23 20:50:47.259 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown initiated...
+07-05-23 20:50:47.272 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown completed.
+07-05-23 20:50:47.338 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Starting JournalServiceTest using Java 17.0.5 with PID 1052 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:50:47.339 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:50:47.795 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Starting...
+07-05-23 20:50:47.818 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61579df0
+07-05-23 20:50:47.819 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Start completed.
+07-05-23 20:50:49.043 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Started JournalServiceTest in 1.757 seconds (process running for 50.042)
+07-05-23 20:50:49.056 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 20:50:49.096 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 20:50:49.181 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown initiated...
+07-05-23 20:50:49.195 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown completed.
+07-05-23 20:50:49.202 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:50:49.220 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:50:49.225 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+07-05-23 20:50:49.241 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+07-05-23 20:50:49.245 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+07-05-23 20:50:49.267 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+07-05-23 20:50:49.272 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown initiated...
+07-05-23 20:50:49.289 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown completed.
+07-05-23 20:50:49.293 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown initiated...
+07-05-23 20:50:49.311 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown completed.
+07-05-23 20:50:49.315 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown initiated...
+07-05-23 20:50:49.331 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown completed.
+07-05-23 20:53:22.631 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Starting AccountControllerTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:22.637 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:30.219 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 20:53:31.078 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@196f7dfd
+07-05-23 20:53:31.087 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 20:53:40.735 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Started AccountControllerTest in 19.166 seconds (process running for 25.768)
+07-05-23 20:53:41.849 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Starting UserControllerTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:41.850 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:42.933 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+07-05-23 20:53:42.977 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@481b801c
+07-05-23 20:53:42.977 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+07-05-23 20:53:44.772 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Started UserControllerTest in 2.997 seconds (process running for 29.805)
+07-05-23 20:53:44.960 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Starting VendorControllerTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:44.960 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:45.791 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+07-05-23 20:53:45.829 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@400cc92c
+07-05-23 20:53:45.830 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+07-05-23 20:53:47.389 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Started VendorControllerTest in 2.482 seconds (process running for 32.422)
+07-05-23 20:53:47.568 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Starting CustomerControllerTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:47.569 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:48.427 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+07-05-23 20:53:48.457 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b2d3732
+07-05-23 20:53:48.458 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+07-05-23 20:53:49.864 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Started CustomerControllerTest in 2.353 seconds (process running for 34.897)
+07-05-23 20:53:50.159 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Starting InvoiceControllerTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:50.160 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:50.984 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Starting...
+07-05-23 20:53:51.002 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@151728e0
+07-05-23 20:53:51.002 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Start completed.
+07-05-23 20:53:52.575 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Started InvoiceControllerTest in 2.486 seconds (process running for 37.607)
+07-05-23 20:53:52.744 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Starting JournalControllerTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:52.744 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:53.257 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Starting...
+07-05-23 20:53:53.279 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cc8e7ca
+07-05-23 20:53:53.280 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Start completed.
+07-05-23 20:53:54.623 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Started JournalControllerTest in 1.918 seconds (process running for 39.655)
+07-05-23 20:53:54.857 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Starting TablesApplicationTests using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:54.857 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:55.382 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Starting...
+07-05-23 20:53:55.404 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27bbad34
+07-05-23 20:53:55.405 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Start completed.
+07-05-23 20:53:56.552 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Started TablesApplicationTests in 1.749 seconds (process running for 41.584)
+07-05-23 20:53:56.839 [main] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 20:53:56.913 [main] INFO  c.c.p.b.service.UsersService -
+		                User created
+07-05-23 20:53:56.915 [main] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+07-05-23 20:53:56.932 [main] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+07-05-23 20:53:56.961 [main] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 20:53:57.004 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 20:53:57.040 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown initiated...
+07-05-23 20:53:57.065 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown completed.
+07-05-23 20:53:57.153 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Starting VendorServiceTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:57.155 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:57.626 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Starting...
+07-05-23 20:53:57.643 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bbd76f
+07-05-23 20:53:57.643 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Start completed.
+07-05-23 20:53:58.917 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Started VendorServiceTest in 1.827 seconds (process running for 43.949)
+07-05-23 20:53:59.136 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown initiated...
+07-05-23 20:53:59.144 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown completed.
+07-05-23 20:53:59.199 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Starting CustomerServiceTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:53:59.199 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:53:59.932 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Starting...
+07-05-23 20:53:59.958 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23d0c264
+07-05-23 20:53:59.959 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Start completed.
+07-05-23 20:54:01.227 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Started CustomerServiceTest in 2.071 seconds (process running for 46.259)
+07-05-23 20:54:01.430 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown initiated...
+07-05-23 20:54:01.443 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown completed.
+07-05-23 20:54:01.524 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:54:01.525 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:54:01.875 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Starting...
+07-05-23 20:54:01.887 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4baf7498
+07-05-23 20:54:01.888 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Start completed.
+07-05-23 20:54:03.154 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 1.693 seconds (process running for 48.186)
+07-05-23 20:54:03.573 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown initiated...
+07-05-23 20:54:03.588 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown completed.
+07-05-23 20:54:03.664 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Starting InvoiceServiceTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:54:03.665 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:54:04.141 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Starting...
+07-05-23 20:54:04.160 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c537902
+07-05-23 20:54:04.161 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Start completed.
+07-05-23 20:54:05.332 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Started InvoiceServiceTest in 1.729 seconds (process running for 50.365)
+07-05-23 20:54:05.500 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown initiated...
+07-05-23 20:54:05.509 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown completed.
+07-05-23 20:54:05.574 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Starting JournalServiceTest using Java 17.0.5 with PID 18392 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 20:54:05.575 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 20:54:06.043 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Starting...
+07-05-23 20:54:06.061 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ff58ee7
+07-05-23 20:54:06.062 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Start completed.
+07-05-23 20:54:07.168 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Started JournalServiceTest in 1.646 seconds (process running for 52.201)
+07-05-23 20:54:07.180 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 20:54:07.216 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 20:54:07.298 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown initiated...
+07-05-23 20:54:07.312 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown completed.
+07-05-23 20:54:07.319 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 20:54:07.336 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 20:54:07.341 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+07-05-23 20:54:07.356 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+07-05-23 20:54:07.359 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+07-05-23 20:54:07.372 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+07-05-23 20:54:07.375 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown initiated...
+07-05-23 20:54:07.389 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown completed.
+07-05-23 20:54:07.393 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown initiated...
+07-05-23 20:54:07.405 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown completed.
+07-05-23 20:54:07.409 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown initiated...
+07-05-23 20:54:07.422 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown completed.
+07-05-23 21:15:34.703 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Starting AccountControllerTest using Java 17.0.5 with PID 10548 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:15:34.707 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:15:40.001 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:15:40.754 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4888425d
+07-05-23 21:15:40.767 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:15:48.249 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Started AccountControllerTest in 14.238 seconds (process running for 17.095)
+07-05-23 21:15:48.924 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:15:48.952 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:19:57.976 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 1292 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:19:57.980 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:20:02.449 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:20:03.286 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1533338c
+07-05-23 21:20:03.292 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:20:11.059 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 13.717 seconds (process running for 16.444)
+07-05-23 21:20:12.023 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:20:12.056 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:26:39.689 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 3016 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:26:39.693 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:26:43.677 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:26:44.452 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d4e99de
+07-05-23 21:26:44.461 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:26:51.747 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 12.703 seconds (process running for 15.321)
+07-05-23 21:26:52.717 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:26:52.743 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:27:56.708 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 14556 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:27:56.712 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:28:01.131 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:28:01.899 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6de84336
+07-05-23 21:28:01.905 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:28:09.374 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 13.279 seconds (process running for 16.031)
+07-05-23 21:28:10.577 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:28:10.609 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:30:16.062 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 7100 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:30:16.069 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:30:20.795 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:30:21.707 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e72fb04
+07-05-23 21:30:21.719 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:30:29.720 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 14.351 seconds (process running for 17.033)
+07-05-23 21:30:30.598 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:30:30.627 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:32:06.813 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 8652 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:32:06.817 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:32:13.026 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:32:14.069 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79ee7d2e
+07-05-23 21:32:14.081 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:32:23.652 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 17.971 seconds (process running for 23.648)
+07-05-23 21:32:24.762 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:32:24.794 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:35:11.992 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 21540 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:35:11.997 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:35:16.567 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:35:17.425 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63326a3a
+07-05-23 21:35:17.432 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:35:25.213 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 13.897 seconds (process running for 16.863)
+07-05-23 21:35:26.175 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:35:26.204 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:39:15.902 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 11884 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:39:15.907 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:39:20.418 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:39:21.245 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f75d9c
+07-05-23 21:39:21.251 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:39:29.192 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 14.003 seconds (process running for 16.671)
+07-05-23 21:39:30.114 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:39:30.165 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:40:45.560 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Starting AccountControllerTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:40:45.565 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:40:53.351 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:40:54.328 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38f9e69b
+07-05-23 21:40:54.335 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:41:03.267 [main] INFO  c.c.p.t.c.AccountControllerTest -
+		                Started AccountControllerTest in 18.953 seconds (process running for 24.597)
+07-05-23 21:41:04.568 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Starting UserControllerTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:04.569 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:05.631 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+07-05-23 21:41:05.669 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17e54304
+07-05-23 21:41:05.671 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+07-05-23 21:41:07.702 [main] INFO  c.c.p.t.c.UserControllerTest -
+		                Started UserControllerTest in 3.208 seconds (process running for 29.032)
+07-05-23 21:41:07.898 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Starting VendorControllerTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:07.898 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:08.493 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+07-05-23 21:41:08.513 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27a1fe7a
+07-05-23 21:41:08.513 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+07-05-23 21:41:10.315 [main] INFO  c.c.p.t.c.VendorControllerTest -
+		                Started VendorControllerTest in 2.46 seconds (process running for 31.645)
+07-05-23 21:41:10.614 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Starting CustomerControllerTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:10.614 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:11.315 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+07-05-23 21:41:11.346 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71721588
+07-05-23 21:41:11.347 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+07-05-23 21:41:13.056 [main] INFO  c.c.p.t.c.CustomerControllerTest -
+		                Started CustomerControllerTest in 2.511 seconds (process running for 34.386)
+07-05-23 21:41:13.295 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Starting InvoiceControllerTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:13.297 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:14.081 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Starting...
+07-05-23 21:41:14.103 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@389a30e4
+07-05-23 21:41:14.103 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Start completed.
+07-05-23 21:41:16.251 [main] INFO  c.c.p.t.c.InvoiceControllerTest -
+		                Started InvoiceControllerTest in 3.008 seconds (process running for 37.581)
+07-05-23 21:41:16.579 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Starting JournalControllerTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:16.580 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:17.258 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Starting...
+07-05-23 21:41:17.290 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48b3c4bf
+07-05-23 21:41:17.291 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Start completed.
+07-05-23 21:41:18.980 [main] INFO  c.c.p.t.c.JournalControllerTest -
+		                Started JournalControllerTest in 2.444 seconds (process running for 40.31)
+07-05-23 21:41:19.294 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Starting TablesApplicationTests using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:19.295 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:19.953 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Starting...
+07-05-23 21:41:19.996 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d40dfe2
+07-05-23 21:41:19.997 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Start completed.
+07-05-23 21:41:21.557 [main] INFO  c.c.p.tables.TablesApplicationTests -
+		                Started TablesApplicationTests in 2.329 seconds (process running for 42.886)
+07-05-23 21:41:21.833 [main] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 21:41:21.888 [main] INFO  c.c.p.b.service.UsersService -
+		                User created
+07-05-23 21:41:21.891 [main] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+07-05-23 21:41:21.910 [main] INFO  c.c.p.b.service.UsersService -
+		                Duplicate User Found
+07-05-23 21:41:21.948 [main] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 21:41:21.995 [main] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 21:41:22.036 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown initiated...
+07-05-23 21:41:22.063 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown completed.
+07-05-23 21:41:22.168 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Starting VendorServiceTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:22.169 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:22.679 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Starting...
+07-05-23 21:41:22.699 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@545e05f0
+07-05-23 21:41:22.700 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Start completed.
+07-05-23 21:41:24.019 [main] INFO  c.c.p.t.service.VendorServiceTest -
+		                Started VendorServiceTest in 1.934 seconds (process running for 45.348)
+07-05-23 21:41:24.305 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown initiated...
+07-05-23 21:41:24.322 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown completed.
+07-05-23 21:41:24.398 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Starting CustomerServiceTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:24.399 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:24.952 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Starting...
+07-05-23 21:41:24.977 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b569c11
+07-05-23 21:41:24.978 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Start completed.
+07-05-23 21:41:26.281 [main] INFO  c.c.p.t.service.CustomerServiceTest -
+		                Started CustomerServiceTest in 1.943 seconds (process running for 47.611)
+07-05-23 21:41:26.430 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown initiated...
+07-05-23 21:41:26.441 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Shutdown completed.
+07-05-23 21:41:26.506 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Starting AccountServiceTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:26.507 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:27.052 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Starting...
+07-05-23 21:41:27.074 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58ef7aa7
+07-05-23 21:41:27.075 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Start completed.
+07-05-23 21:41:28.578 [main] INFO  c.c.p.t.service.AccountServiceTest -
+		                Started AccountServiceTest in 2.125 seconds (process running for 49.908)
+07-05-23 21:41:29.152 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown initiated...
+07-05-23 21:41:29.168 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-10 - Shutdown completed.
+07-05-23 21:41:29.242 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Starting InvoiceServiceTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:29.243 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:29.600 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Starting...
+07-05-23 21:41:29.620 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b0fbd91
+07-05-23 21:41:29.620 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Start completed.
+07-05-23 21:41:30.916 [main] INFO  c.c.p.t.service.InvoiceServiceTest -
+		                Started InvoiceServiceTest in 1.725 seconds (process running for 52.246)
+07-05-23 21:41:31.128 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown initiated...
+07-05-23 21:41:31.140 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-11 - Shutdown completed.
+07-05-23 21:41:31.210 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Starting JournalServiceTest using Java 17.0.5 with PID 13992 (started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:41:31.211 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:41:31.663 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Starting...
+07-05-23 21:41:31.682 [main] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cd04665
+07-05-23 21:41:31.683 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Start completed.
+07-05-23 21:41:32.856 [main] INFO  c.c.p.t.service.JournalServiceTest -
+		                Started JournalServiceTest in 1.7 seconds (process running for 54.186)
+07-05-23 21:41:32.868 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 21:41:32.914 [main] INFO  c.c.p.b.service.JournalService -
+		                Entry Created
+07-05-23 21:41:33.008 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown initiated...
+07-05-23 21:41:33.022 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-12 - Shutdown completed.
+07-05-23 21:41:33.036 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+07-05-23 21:41:33.053 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+07-05-23 21:41:33.066 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+07-05-23 21:41:33.084 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+07-05-23 21:41:33.104 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+07-05-23 21:41:33.126 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+07-05-23 21:41:33.143 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown initiated...
+07-05-23 21:41:33.162 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown completed.
+07-05-23 21:41:33.165 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown initiated...
+07-05-23 21:41:33.177 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown completed.
+07-05-23 21:41:33.181 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown initiated...
+07-05-23 21:41:33.196 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown completed.

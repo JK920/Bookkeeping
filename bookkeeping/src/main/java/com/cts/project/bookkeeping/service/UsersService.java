@@ -16,6 +16,7 @@ import com.cts.project.bookkeeping.model.PasswordChange;
 import com.cts.project.bookkeeping.model.UserModel;
 import com.cts.project.bookkeeping.repository.AccountRepository;
 import com.cts.project.bookkeeping.repository.UsersRepository;
+import com.cts.project.bookkeeping.tools.PasswordHashing;
 
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
@@ -31,13 +32,15 @@ public class UsersService {
 	AccountRepository aRepo;
 	
 
+	@Autowired
+	PasswordHashing pH;
 	
 	public Users registerUser(UserModel user) throws DuplicateUserException{
 		Users savedUser = new Users();
 		if(uRepo.findByEmail(user.getEmail()).isEmpty()) {
 			savedUser.setName(user.getName());
 			savedUser.setUsername(user.getUsername());
-			savedUser.setPassword(user.getPassword());
+			savedUser.setPassword(pH.hashPassword(user.getPassword()));
 			savedUser.setEmail(user.getEmail());
 			savedUser.setCompanyName(user.getCompanyName());
 			savedUser= uRepo.save(savedUser);
@@ -75,7 +78,7 @@ public class UsersService {
 		}
 	}
 	
-	public String login(LoginModel userLogin) throws UserNotFoundException{
+	public Users login(LoginModel userLogin) throws UserNotFoundException{
 		
 		String userName = userLogin.getUsername();
 		String pass = userLogin.getPassword();
@@ -85,12 +88,13 @@ public class UsersService {
 			throw new UserNotFoundException("User Not Found!!!");
 		}
 		else {
-			if(pass.equals(user.get(0).getPassword())) {
-				log.info("logged in");
-				return "login success";
+			String hash = pH.hashPassword(pass);
+			if(!hash.equals(user.get(0).getPassword())) {
+				log.info("Username and Password does not match");
+				throw new UserNotFoundException("Invalid Credentials");
 			}
-			log.info("Username and Password does not match");
-			return "Invalid credentials";
+			log.info("logged in");
+			return user.get(0);
 		}
 	}
 	

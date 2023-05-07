@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cts.project.bookkeeping.entities.Account;
 import com.cts.project.bookkeeping.exception.AccountNotFoundException;
 import com.cts.project.bookkeeping.exception.UserNotFoundException;
+import com.cts.project.bookkeeping.model.AccountLedger;
 import com.cts.project.bookkeeping.model.AccountModel;
 import com.cts.project.bookkeeping.model.AccountType;
 import com.cts.project.bookkeeping.service.AccountService;
@@ -74,7 +75,7 @@ public class AccountController {
 	}
 	
 	@GetMapping(value="/get/users/{userId}/ledger")
-	public String generateLedger(@PathVariable("userId") String userId) {
+	public Map<String, List<AccountLedger>> generateLedger(@PathVariable("userId") String userId) {
 		return aService.generateLedger(userId);
 	}
 	

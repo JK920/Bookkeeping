@@ -2,6 +2,7 @@ package com.cts.project.bookkeeping.service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,6 +15,7 @@ import com.cts.project.bookkeeping.entities.Ledger;
 import com.cts.project.bookkeeping.entities.Users;
 import com.cts.project.bookkeeping.exception.AccountNotFoundException;
 import com.cts.project.bookkeeping.exception.UserNotFoundException;
+import com.cts.project.bookkeeping.model.AccountLedger;
 import com.cts.project.bookkeeping.model.AccountModel;
 import com.cts.project.bookkeeping.model.AccountType;
 import com.cts.project.bookkeeping.repository.AccountRepository;
@@ -184,17 +186,19 @@ public class AccountService {
 		return total;
 	}
 	
-	public String generateLedger(String userId) {
-		StringBuilder s = new StringBuilder();
+	public Map<String, List<AccountLedger>> generateLedger(String userId) {
+		Map<String, List<AccountLedger>> ledger = new HashMap<>();
 		for(Account a:getAccountsOfUser(userId)) {
-			s.append(a.getAccountId()+"\t"+a.getAccountName()+"\n");
-			s.append("Date"+"\t"+"Debit"+"\t"+"Credit"+"\t"+"Balance"+"\n");
+			String s = a.getAccountName(); 
+			List<AccountLedger> list = new ArrayList<>();
 			for(Journal j:a.getJournalList()) {
-				s.append(j.getDate()+"\t"+j.getDebit()+"\t"+j.getCredit()+"\t"+j.getLedger().getBalance()+"\n");
+				AccountLedger aL = new AccountLedger(j.getDate(), j.getReference(), j.getDescription(), j.getDebit(), j.getCredit(), j.getLedger().getBalance());
+				list.add(aL);
 			}
-			s.append("\n\n");
+			ledger.put(s, list);					
 		}
-		return s.toString();
+		return ledger;
+
 	}
 	
 	public double generateIncome(String userId) {

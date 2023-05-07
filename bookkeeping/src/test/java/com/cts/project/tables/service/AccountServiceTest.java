@@ -27,6 +27,7 @@ import com.cts.project.bookkeeping.entities.Ledger;
 import com.cts.project.bookkeeping.entities.Users;
 import com.cts.project.bookkeeping.exception.AccountNotFoundException;
 import com.cts.project.bookkeeping.exception.UserNotFoundException;
+import com.cts.project.bookkeeping.model.AccountLedger;
 import com.cts.project.bookkeeping.model.AccountModel;
 import com.cts.project.bookkeeping.model.AccountType;
 import com.cts.project.bookkeeping.repository.AccountRepository;
@@ -259,6 +260,21 @@ class AccountServiceTest {
 		aService.updateOpeningBalance("u1", map);
 		assertEquals(5000, cash.getBalance(),0.1);
 		verify(lRepo,times(2)).saveAndFlush(any(Ledger.class));
+	}
+	
+	@Test
+	 void testGenerateLedger() {
+		user.setAccountList(List.of(cash));
+		cash.setJournalList(List.of(j));
+		Ledger l = new Ledger();
+		l.setBalance(5000);
+		j.setLedger(l);
+		Map<String,List<AccountLedger>> map = new HashMap<>();
+		AccountLedger aL = new AccountLedger(j.getDate(),j.getReference(),j.getDescription(),j.getDebit(),j.getCredit(),l.getBalance());
+		map.put("Cash", List.of(aL));
+		when(uS.getUserById("u1")).thenReturn(user);
+		List<AccountLedger> a = aService.generateLedger("u1").get("Cash");
+		assertEquals(aL.getBalance(),a.get(0).getBalance());
 	}
 	
 	@Test

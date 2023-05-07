@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
-    <fullyQualifiedTypeName name="com.restaurant.model.BookTable"/>
-    <fullyQualifiedTypeName name="com.restaurant.exception.BookTableInvalidException"/>
-    <fullyQualifiedTypeName name="io.vavr.collection.HashMap"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="com.restaurant.service.IRestaurantService"/>
     <fullyQualifiedTypeName name="com.restaurant.validation.RestaurantValidator"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.WebDataBinder"/>
@@ -34,7 +22,6 @@
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.service.AccountService"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.controller.AccountController"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.model.AccountModel"/>
-    <fullyQualifiedTypeName name="com.cts.project.bookkeeping.entities.Account"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.model.AccountType"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.model.LoginModel"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.AssertFalse.List"/>
@@ -53,11 +40,24 @@
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.model.InvoiceModel"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.service.JournalService"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.controller.JournalsController"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.entities.Journal"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.cts.project.bookkeeping.model.JournalModel"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.cts.project.bookkeeping.tools.PasswordHashing"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.cts.project.bookkeeping.entities.Account"/>
+    <fullyQualifiedTypeName name="com.cts.project.bookkeeping.entities.Ledger"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.cts.project.bookkeeping.model.AccountLedger"/>
 </qualifiedTypeNameHistroy>

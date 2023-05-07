@@ -34,6 +34,7 @@ import com.cts.project.bookkeeping.TablesApplication;
 import com.cts.project.bookkeeping.controller.AccountController;
 import com.cts.project.bookkeeping.entities.Account;
 import com.cts.project.bookkeeping.entities.Users;
+import com.cts.project.bookkeeping.model.AccountLedger;
 import com.cts.project.bookkeeping.model.AccountModel;
 import com.cts.project.bookkeeping.model.AccountType;
 import com.cts.project.bookkeeping.service.AccountService;
@@ -220,8 +221,11 @@ class AccountControllerTest {
 	
 	@Test
 	void testGenerateLedger() throws Exception {
-		String exp = "ledger";
-		when(aS.generateLedger("u1")).thenReturn(exp);
+		
+		Map<String,List<AccountLedger>> map = new HashMap<>();
+		map.put("Account", List.of(new AccountLedger()));
+		String exp = objectMapper.writeValueAsString(map);
+		when(aS.generateLedger("u1")).thenReturn(map);
 		
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
 				.get("/get/users/u1/ledger")
@@ -237,7 +241,7 @@ class AccountControllerTest {
 	}
 	
 	@Test
-	void testGenerateIncom() throws Exception {
+	void testGenerateIncome() throws Exception {
 		String exp = "500.0";
 		when(aS.generateIncome("u1")).thenReturn(500.0);
 		

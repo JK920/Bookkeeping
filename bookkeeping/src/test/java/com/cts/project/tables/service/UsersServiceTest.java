@@ -28,6 +28,7 @@ import com.cts.project.bookkeeping.model.UserModel;
 import com.cts.project.bookkeeping.repository.AccountRepository;
 import com.cts.project.bookkeeping.repository.UsersRepository;
 import com.cts.project.bookkeeping.service.UsersService;
+import com.cts.project.bookkeeping.tools.PasswordHashing;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -42,6 +43,9 @@ class UsersServiceTest {
 	AccountRepository aRepo;
 	@InjectMocks
 	UsersService uS;
+	
+	@Mock
+	PasswordHashing pH;
 	
 	private UserModel u;
 	private LoginModel login;
@@ -78,7 +82,8 @@ class UsersServiceTest {
 	 void testLogin_LoginSuccess() {
 		List<Users>userByUsername = List.of(user);
 		when(uRepo.findByUsername(u.getUsername())).thenReturn(userByUsername);
-		assertEquals("login success", uS.login(login));
+		when(pH.hashPassword(anyString())).thenReturn("password");
+		assertEquals(user, uS.login(login));
 		
 	}
 	
@@ -94,8 +99,9 @@ class UsersServiceTest {
 	 void testLogin_Invalid() {
 		List<Users>userByUsername = List.of(user);
 		when(uRepo.findByUsername(u.getUsername())).thenReturn(userByUsername);
+		when(pH.hashPassword(anyString())).thenReturn("pass");
 		login.setPassword("pass");
-		assertEquals("Invalid credentials", uS.login(login));
+		assertThrows(UserNotFoundException.class,()-> uS.login(login));
 		
 	}
 	
