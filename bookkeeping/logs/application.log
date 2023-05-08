@@ -14699,3 +14699,51 @@ List of constraint violations:[
 		                HikariPool-2 - Start completed.
 08-05-23 22:23:08.486 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
 		                Started TablesApplication in 3.765 seconds (process running for 636.732)
+08-05-23 22:25:35.882 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 4116 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 22:25:35.884 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 22:25:39.458 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 22:25:39.861 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eaaabfa
+08-05-23 22:25:39.864 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 22:25:44.969 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 9.524 seconds (process running for 10.315)
+08-05-23 22:26:01.369 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                User created
+08-05-23 22:26:01.447 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+08-05-23 22:26:15.092 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 22:26:26.689 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 22:26:26.733 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 22:26:26.774 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 22:26:26.781 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 22:26:26.812 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 22:26:26.828 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 22:26:26.844 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 22:26:26.859 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 22:26:26.891 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 22:26:26.906 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 22:26:26.922 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0011
+08-05-23 22:26:26.953 [http-nio-8080-exec-10] INFO  c.c.p.b.service.AccountService -
+		                A0012
+08-05-23 22:26:50.928 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 22:56:50.563 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                User not found
+08-05-23 22:56:56.438 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
