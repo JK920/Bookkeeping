@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React , {useState} from 'react';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
 
 import Home from './component/Home';
@@ -28,56 +28,56 @@ import ViewVendors from './component/Vendor/ViewVendors';
 
 import AddJournal from './component/Journal/AddJournal';
 import ViewJournal from './component/Journal/ViewJournal';
+import axios from 'axios';
+import AccountService from './service/AccountService';
 
 function App() {
-  return (
 
-              <BrowserRouter>
-                    <Routes>
-                      <Route path="/" element={<Home/>}>
-                        <Route index element={<HomeContent />} />
-                        <Route path="/register" element={<Register/>} />
-                        <Route path="/login" element={<Login/>} />
-                        <Route path='/logout' element={<Logout/>}/> 
-                      </Route>
-                      <Route path="/main" element={<Main/>}>
-                        <Route index  element={<Dashboard/>} />
-                        <Route path='/main/dashboard' element={<Dashboard/>} />
 
-                        <Route path="/main/accountschart" element={<ViewAccount/>} />
-                        <Route path="/main/addaccount" element={<AddAccount/>} />
-                        <Route path="/main/openingbalances" element={<OpeningBalances/>} />
 
-                        <Route path='/main/addcustomer' element={<AddCustomer/>} />
-                        <Route path="/main/addinvoice" element={<AddInvoice/>} />
-                        <Route path="/main/modifycustomer" element={<ModifyCustomer/>} />
-                        <Route path="/main/viewcustomer" element={<ViewCustomer/>} />
-                        <Route path='/main/viewinvoice' element={<ViewInvoice/>} />
+  const onLoginHandler= (loginData) =>{
 
-                        <Route path="/main/addbills" element={<AddBills/>} />
-                        <Route path="/main/addvendor" element={<AddVendor/>} />
-                        <Route path="/main/modifyvendor" element={<ModifyVendor/>} />
-                        <Route path="/main/viewbills" element={<ViewBills/>} />
-                        <Route path="/main/viewvendors" element={<ViewVendors/>} />
-                        
-                        <Route path="/main/addjournal" element={<AddJournal/>} />
-                        <Route path="/main/ViewJournal" element={<ViewJournal/>} />
-                      </Route>
-                    </Routes>
-                </BrowserRouter>
+      localStorage.setItem("userId",loginData.userId);
+      localStorage.setItem("username",loginData.username);
+      localStorage.setItem("company",loginData.company);
+  };
 
-    // <div className="App">
-    //   <div className='row'>
-    //     <div className='col'>
-    //       <NavbarMain/>
-    //     </div>
-    //   </div>
-    //   <div className='row'>
-    //     <div className='col'>
-    //       <Main/>
-    //     </div>
-    //   </div>
-    // </div>
+
+
+  return (    
+          <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Home/>}>
+                    <Route index element={<HomeContent />} />
+                    <Route path="/register" element={<Register/>} />
+                    <Route path="/login" element={<Login onLogin={onLoginHandler}/>} />
+                    <Route path='/logout' element={<Logout/>}/> 
+                  </Route>
+                  <Route path="/main" element={<Main/>}>
+                    <Route index  element={<Dashboard/>} />
+                    <Route path='/main/dashboard' element={<Dashboard/>} />
+
+                    <Route path="/main/accountschart" element={<ViewAccount />} />
+                    <Route path="/main/addaccount" element={<AddAccount />} />
+                    <Route path="/main/openingbalances" element={<OpeningBalances/>} />
+
+                    <Route path='/main/addcustomer' element={<AddCustomer />} />
+                    <Route path="/main/addinvoice" element={<AddInvoice/>} />
+                    <Route path="/main/modifycustomer" element={<ModifyCustomer/>} />
+                    <Route path="/main/viewcustomer" element={<ViewCustomer/>} />
+                    <Route path='/main/viewinvoice' element={<ViewInvoice/>} />
+
+                    <Route path="/main/addbills" element={<AddBills/>} />
+                    <Route path="/main/addvendor" element={<AddVendor/>} />
+                    <Route path="/main/modifyvendor" element={<ModifyVendor/>} />
+                    <Route path="/main/viewbills" element={<ViewBills/>} />
+                    <Route path="/main/viewvendors" element={<ViewVendors/>} />
+                    
+                    <Route path="/main/addjournal" element={<AddJournal/>} />
+                    <Route path="/main/ViewJournal" element={<ViewJournal/>} />
+                  </Route>
+                </Routes>
+            </BrowserRouter>
   );
 }
 

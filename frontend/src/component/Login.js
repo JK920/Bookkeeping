@@ -1,19 +1,22 @@
-import React, { Component } from 'react'
-import axios from "axios";
+import React, { Component } from 'react';
+import UserService from '../service/UserService';
 import './Login.css';
+import { Navigate } from 'react-router-dom';
 
 export default class Login extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
             username:"",
-            password:""
+            password:"",
+            success:false
         }
         this.handleUsernameChange = this.handleUsernameChange.bind(this);
         this.handlePasswordChange = this.handlePasswordChange.bind(this);
         this.submitHandler = this.submitHandler.bind(this); 
     }
+
     handleUsernameChange(event){
         this.setState({username:event.target.value});
     }
@@ -26,16 +29,28 @@ export default class Login extends Component{
             username:this.state.username,
             password:this.state.password
         }
-        axios.post('http://localhost:8080/login/user',login)
+        UserService.userLogin(login)
         .then(response=>{
             if(response.status===200){
-                alert(response.data);
+                const loginObj ={
+                    userId : response.data.userId,
+                    username : response.data.username,
+                    company : response.data.companyName,
+                };
+                this.props.onLogin(loginObj);
+                this.setState({success:true});
+                
             }
         }).catch(err=>{
             alert(err.response.data.message);
         })
+
     }
+    
     render(){
+        if(this.state.success){
+            return <Navigate to="/main"/>;
+        }
         return(
             <div className='container-fluid top'>
                 <div className='align'>

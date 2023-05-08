@@ -23,7 +23,9 @@ import com.cts.project.bookkeeping.repository.JournalRepository;
 import com.cts.project.bookkeeping.repository.LedgerRepository;
 
 import jakarta.transaction.Transactional;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 public class AccountService {
 	
@@ -225,7 +227,7 @@ public class AccountService {
 			double balance = balanceMap.get(accId);
 			total+=balance;
 			Account a = getAccountById(accId, userId);
-			
+			log.info(accId,balance);
 			if(a.getType()==AccountType.ASSET || a.getType()==AccountType.EXPENSE) {
 				a.setBalance(balance);
 				a=aRepo.saveAndFlush(a);

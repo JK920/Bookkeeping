@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -34,7 +33,7 @@ public class Journal {
 	@Size(max = 8)
 	private String journalId;
 	
-	@JsonBackReference
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="userId")
 	@NotNull
@@ -44,7 +43,7 @@ public class Journal {
 	@PastOrPresent
 	private LocalDate date;
 	
-	@JsonBackReference
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="accountId")
 	@NotNull
@@ -57,17 +56,14 @@ public class Journal {
 	@Size(max = 100)
 	private String description;
 	
-	@JsonBackReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="invoiceId")
 	private Invoice invoice;
 	
-	@JsonBackReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="vendorId")
 	private Vendors vendor;
 	
-	@JsonBackReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="customerId")
 	private Customers customer;

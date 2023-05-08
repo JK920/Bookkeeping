@@ -13843,3 +13843,859 @@ List of constraint violations:[
 		                HikariPool-6 - Shutdown initiated...
 07-05-23 21:41:33.196 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
 		                HikariPool-6 - Shutdown completed.
+07-05-23 21:46:36.969 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 16780 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+07-05-23 21:46:36.972 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+07-05-23 21:46:40.389 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+07-05-23 21:46:40.827 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51dba5cd
+07-05-23 21:46:40.831 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+07-05-23 21:46:44.689 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 8.224 seconds (process running for 9.257)
+07-05-23 21:47:07.406 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 21:47:12.269 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 21:47:17.273 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 21:47:54.228 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 21:48:27.516 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 21:49:15.500 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 22:19:29.166 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 22:49:12.892 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 22:51:23.709 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:06:17.814 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 23:06:26.361 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 23:06:44.538 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+07-05-23 23:06:51.143 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                User not found
+07-05-23 23:06:56.779 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:10:12.546 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:12:56.515 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:14:27.280 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:17:42.148 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:18:07.488 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:45:15.782 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:45:43.647 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:55:56.894 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:56:20.885 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:57:10.805 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+07-05-23 23:57:30.088 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 00:18:45.788 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11856 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 00:18:45.796 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 00:18:50.218 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 00:18:50.632 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34956326
+08-05-23 00:18:50.635 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 00:18:54.853 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 10.34 seconds (process running for 11.339)
+08-05-23 00:19:08.809 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 00:20:50.612 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 00:21:43.594 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 00:23:16.996 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 00:23:40.581 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:05:28.772 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22420 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 08:05:28.772 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 08:05:36.033 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 08:05:36.844 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2890fdf3
+08-05-23 08:05:36.859 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 08:05:45.065 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 17.283 seconds (process running for 19.652)
+08-05-23 08:07:19.826 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:08:48.693 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+08-05-23 08:08:48.871 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+08-05-23 08:08:49.204 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22420 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 08:08:49.205 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 08:08:51.326 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+08-05-23 08:08:51.368 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37a2fdfc
+08-05-23 08:08:51.369 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+08-05-23 08:08:54.407 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 5.333 seconds (process running for 208.99)
+08-05-23 08:08:55.965 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+08-05-23 08:08:55.982 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+08-05-23 08:08:56.203 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22420 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 08:08:56.204 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 08:08:57.050 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+08-05-23 08:08:57.082 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@508ba7e6
+08-05-23 08:08:57.083 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+08-05-23 08:08:59.214 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 3.115 seconds (process running for 213.796)
+08-05-23 08:09:42.401 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+08-05-23 08:09:42.429 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+08-05-23 08:09:42.673 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22420 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 08:09:42.676 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 08:09:44.252 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+08-05-23 08:09:44.298 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41698523
+08-05-23 08:09:44.299 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+08-05-23 08:09:46.410 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 3.86 seconds (process running for 260.992)
+08-05-23 08:10:12.259 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22284 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 08:10:12.262 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 08:10:18.674 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 08:10:19.528 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f88a0f6
+08-05-23 08:10:19.536 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 08:10:27.199 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 15.732 seconds (process running for 17.261)
+08-05-23 08:13:26.590 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:29:11.920 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:46:40.863 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:53:06.415 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:53:08.370 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 08:54:26.272 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 09:34:24.496 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 09:43:01.405 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 09:46:29.149 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 09:48:49.803 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 09:53:00.746 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 09:56:46.721 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 11:28:30.847 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 11:33:21.954 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 11:45:47.412 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:08:33.285 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:10:21.376 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:13:52.659 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:17:00.519 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:18:42.767 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:20:43.139 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 12:57:31.432 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+08-05-23 12:57:37.161 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 13:05:01.557 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 13:34:26.785 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 13:36:13.421 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 15:57:21.221 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 16:03:37.532 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 16:04:48.741 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 16:06:51.982 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 16:09:44.137 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 16:10:23.857 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 17:36:09.816 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+08-05-23 17:36:14.986 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 17:49:53.280 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 18:04:14.691 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+08-05-23 18:04:14.723 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+08-05-23 18:04:26.116 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22284 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 18:04:26.117 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 18:04:26.755 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+08-05-23 18:04:26.766 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3179cbb6
+08-05-23 18:04:26.766 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+08-05-23 18:04:28.377 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 2.322 seconds (process running for 35658.444)
+08-05-23 18:20:24.389 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                User not found
+08-05-23 18:20:31.649 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 18:43:06.708 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 18:52:27.025 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 19:00:12.335 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 19:07:09.638 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 19:22:39.476 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 20:38:28.924 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+08-05-23 20:38:28.945 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+08-05-23 20:38:29.475 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22284 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 20:38:29.475 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 20:38:31.418 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+08-05-23 20:38:31.442 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@329cf769
+08-05-23 20:38:31.444 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+08-05-23 20:38:34.131 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 4.738 seconds (process running for 44904.194)
+08-05-23 20:38:36.875 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+08-05-23 20:38:36.895 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+08-05-23 20:38:39.432 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22284 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 20:38:39.432 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 20:38:39.775 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+08-05-23 20:38:39.785 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@796919d3
+08-05-23 20:38:39.785 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+08-05-23 20:38:40.496 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 1.093 seconds (process running for 44910.559)
+08-05-23 20:48:38.160 [http-nio-8080-exec-3] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 20:48:38.227 [http-nio-8080-exec-3] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 20:53:14.745 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 20:53:14.765 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 20:55:17.145 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 22480 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 20:55:17.147 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 20:55:21.286 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 20:55:21.731 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70a1e860
+08-05-23 20:55:21.734 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 20:55:26.598 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 9.942 seconds (process running for 10.905)
+08-05-23 20:56:20.394 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+08-05-23 20:56:26.565 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 20:58:49.051 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 16108 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 20:58:49.053 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 20:58:52.883 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 20:58:53.308 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eaaabfa
+08-05-23 20:58:53.313 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 20:58:58.163 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 9.591 seconds (process running for 10.647)
+08-05-23 20:59:50.495 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 20:59:52.733 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:03:06.548 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:03:07.891 [http-nio-8080-exec-6] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:04:01.672 [http-nio-8080-exec-8] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:04:05.789 [http-nio-8080-exec-9] INFO  c.c.p.b.service.UsersService -
+		                Username and Password does not match
+08-05-23 21:04:12.758 [http-nio-8080-exec-10] INFO  c.c.p.b.service.UsersService -
+		                User not found
+08-05-23 21:04:22.747 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:05:00.217 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+08-05-23 21:05:00.282 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+08-05-23 21:05:00.764 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 16108 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:05:00.766 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:05:02.100 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+08-05-23 21:05:02.126 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fb4b4f7
+08-05-23 21:05:02.127 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+08-05-23 21:05:04.607 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 4.091 seconds (process running for 377.09)
+08-05-23 21:05:06.062 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+08-05-23 21:05:06.069 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+08-05-23 21:05:06.157 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 16108 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:05:06.158 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:05:06.736 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+08-05-23 21:05:06.756 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78b91793
+08-05-23 21:05:06.757 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+08-05-23 21:05:09.265 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 3.139 seconds (process running for 381.749)
+08-05-23 21:05:32.591 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                User created
+08-05-23 21:05:32.651 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+08-05-23 21:05:42.564 [http-nio-8080-exec-5] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:06:35.213 [http-nio-8080-exec-9] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:06:35.246 [http-nio-8080-exec-9] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:06:35.281 [http-nio-8080-exec-9] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:06:35.300 [http-nio-8080-exec-9] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:07:05.393 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:07:05.414 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:07:05.429 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:07:05.442 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:07:05.461 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:07:05.480 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:07:05.498 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:07:05.516 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 21:07:05.522 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 21:07:05.553 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 21:07:05.569 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0011
+08-05-23 21:07:05.585 [http-nio-8080-exec-6] INFO  c.c.p.b.service.AccountService -
+		                A0012
+08-05-23 21:10:51.974 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 17016 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:10:51.977 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:10:56.159 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 21:10:56.613 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ab58760
+08-05-23 21:10:56.616 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 21:11:01.994 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 10.673 seconds (process running for 11.62)
+08-05-23 21:11:38.570 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User created
+08-05-23 21:11:38.660 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+08-05-23 21:11:57.649 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:40:02.495 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:40:02.562 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:40:39.488 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:40:39.516 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:41:34.997 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:41:35.017 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:41:35.032 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:41:35.049 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:41:51.047 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:41:51.072 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:41:51.083 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:41:51.097 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:41:51.111 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:41:58.915 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:41:58.944 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:41:58.956 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:41:58.973 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:41:58.973 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:41:58.989 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:42:21.971 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:42:21.997 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:42:22.009 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:42:22.014 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:42:22.032 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:42:22.047 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:42:22.047 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:42:38.776 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:42:38.795 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:42:38.810 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:42:38.820 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:42:38.836 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:42:38.837 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:42:38.854 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:42:38.896 [http-nio-8080-exec-7] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 21:43:19.521 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:43:19.542 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:43:19.555 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:43:19.565 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:43:19.567 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:43:19.584 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:43:19.601 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:43:19.617 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 21:43:19.636 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 21:43:44.169 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:43:44.201 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:43:44.216 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:43:44.216 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:43:44.232 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:43:44.247 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:43:44.263 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:43:44.263 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 21:43:44.279 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 21:43:44.294 [http-nio-8080-exec-1] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 21:44:09.408 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:44:09.439 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:44:09.454 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:44:09.454 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:44:09.470 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:44:09.486 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:44:09.501 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:44:09.501 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 21:44:09.517 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 21:44:09.533 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 21:44:09.533 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0011
+08-05-23 21:44:38.343 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:44:38.363 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:44:38.375 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 21:44:38.386 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 21:44:38.397 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 21:44:38.397 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 21:44:38.413 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 21:44:38.427 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 21:44:38.430 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 21:44:38.446 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 21:44:38.446 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0011
+08-05-23 21:44:38.469 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0012
+08-05-23 21:51:40.362 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:51:40.364 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:51:44.104 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 21:51:44.551 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dd94fcd
+08-05-23 21:51:44.554 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 21:51:49.366 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 9.46 seconds (process running for 10.307)
+08-05-23 21:52:36.567 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                User created
+08-05-23 21:52:36.643 [http-nio-8080-exec-4] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+08-05-23 21:52:46.331 [http-nio-8080-exec-7] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:53:00.994 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:53:01.050 [http-nio-8080-exec-5] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 21:53:52.626 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+08-05-23 21:53:52.701 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+08-05-23 21:53:53.025 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:53:53.026 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:53:55.735 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+08-05-23 21:53:55.796 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34977249
+08-05-23 21:53:55.796 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+08-05-23 21:53:58.403 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 5.475 seconds (process running for 139.343)
+08-05-23 21:54:00.882 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+08-05-23 21:54:00.891 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+08-05-23 21:54:00.973 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:54:00.974 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:54:01.614 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Starting...
+08-05-23 21:54:01.628 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@799bd19c
+08-05-23 21:54:01.629 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Start completed.
+08-05-23 21:54:03.409 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 2.467 seconds (process running for 144.35)
+08-05-23 21:55:56.195 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown initiated...
+08-05-23 21:55:56.244 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-3 - Shutdown completed.
+08-05-23 21:55:56.548 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:55:56.549 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:55:58.050 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Starting...
+08-05-23 21:55:58.072 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61998b
+08-05-23 21:55:58.072 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Start completed.
+08-05-23 21:56:01.265 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 4.812 seconds (process running for 262.206)
+08-05-23 21:56:02.742 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown initiated...
+08-05-23 21:56:02.758 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-4 - Shutdown completed.
+08-05-23 21:56:02.882 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:56:02.883 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:56:03.448 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Starting...
+08-05-23 21:56:03.479 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@263c58cf
+08-05-23 21:56:03.480 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Start completed.
+08-05-23 21:56:05.112 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 2.29 seconds (process running for 266.06)
+08-05-23 21:58:06.266 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown initiated...
+08-05-23 21:58:06.308 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-5 - Shutdown completed.
+08-05-23 21:58:06.565 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:58:06.566 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:58:08.370 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Starting...
+08-05-23 21:58:08.386 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5aff2887
+08-05-23 21:58:08.387 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Start completed.
+08-05-23 21:58:09.971 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 3.493 seconds (process running for 390.912)
+08-05-23 21:58:11.435 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown initiated...
+08-05-23 21:58:11.443 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-6 - Shutdown completed.
+08-05-23 21:58:11.531 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:58:11.531 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:58:11.967 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Starting...
+08-05-23 21:58:11.980 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3290c3f7
+08-05-23 21:58:11.980 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Start completed.
+08-05-23 21:58:13.446 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 1.943 seconds (process running for 394.386)
+08-05-23 21:58:34.513 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown initiated...
+08-05-23 21:58:34.522 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-7 - Shutdown completed.
+08-05-23 21:58:34.654 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:58:34.655 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:58:35.354 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Starting...
+08-05-23 21:58:35.369 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b83623
+08-05-23 21:58:35.369 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Start completed.
+08-05-23 21:58:38.587 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 3.976 seconds (process running for 419.528)
+08-05-23 21:58:40.039 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown initiated...
+08-05-23 21:58:40.046 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-8 - Shutdown completed.
+08-05-23 21:58:40.124 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 11696 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:58:40.124 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:58:40.427 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Starting...
+08-05-23 21:58:40.441 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37a90354
+08-05-23 21:58:40.441 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-9 - Start completed.
+08-05-23 21:58:41.868 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 1.764 seconds (process running for 422.809)
+08-05-23 21:58:57.100 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 8220 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 21:58:57.102 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 21:59:00.655 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 21:59:01.126 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c147d8b
+08-05-23 21:59:01.130 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 21:59:06.266 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 9.685 seconds (process running for 10.625)
+08-05-23 21:59:35.815 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User created
+08-05-23 21:59:35.893 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+08-05-23 21:59:45.862 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 21:59:56.049 [http-nio-8080-exec-9] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 21:59:56.097 [http-nio-8080-exec-9] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 22:00:15.819 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 22:00:15.845 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 22:00:15.865 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 22:00:15.883 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 22:00:15.909 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 22:00:15.928 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 22:00:15.945 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 22:00:15.961 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 22:00:15.976 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 22:00:15.992 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 22:00:16.023 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0011
+08-05-23 22:00:16.039 [http-nio-8080-exec-8] INFO  c.c.p.b.service.AccountService -
+		                A0012
+08-05-23 22:10:13.581 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+08-05-23 22:10:13.592 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+08-05-23 22:10:13.692 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 8220 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 22:10:13.693 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 22:10:14.527 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+08-05-23 22:10:14.543 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c712176
+08-05-23 22:10:14.544 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+08-05-23 22:10:14.740 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown initiated...
+08-05-23 22:10:14.746 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Shutdown completed.
+08-05-23 22:12:33.026 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 20840 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 22:12:33.028 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 22:12:36.191 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+08-05-23 22:12:36.623 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65b60a3f
+08-05-23 22:12:36.628 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+08-05-23 22:12:41.248 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 8.667 seconds (process running for 9.494)
+08-05-23 22:13:36.792 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                User created
+08-05-23 22:13:36.886 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                Default Accounts Created
+08-05-23 22:13:45.896 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 22:14:02.085 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0001
+08-05-23 22:14:02.119 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0002
+08-05-23 22:14:02.150 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0003
+08-05-23 22:14:02.182 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0004
+08-05-23 22:14:02.197 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0005
+08-05-23 22:14:02.228 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0006
+08-05-23 22:14:02.244 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0007
+08-05-23 22:14:02.260 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0008
+08-05-23 22:14:02.296 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0009
+08-05-23 22:14:02.317 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0010
+08-05-23 22:14:02.332 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0011
+08-05-23 22:14:02.348 [http-nio-8080-exec-2] INFO  c.c.p.b.service.AccountService -
+		                A0012
+08-05-23 22:21:41.417 [http-nio-8080-exec-3] INFO  c.c.p.b.service.UsersService -
+		                logged in
+08-05-23 22:23:04.639 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown initiated...
+08-05-23 22:23:04.655 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Shutdown completed.
+08-05-23 22:23:04.797 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 20840 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+08-05-23 22:23:04.799 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+08-05-23 22:23:05.909 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Starting...
+08-05-23 22:23:05.957 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67ff4bb6
+08-05-23 22:23:05.966 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-2 - Start completed.
+08-05-23 22:23:08.486 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 3.765 seconds (process running for 636.732)

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -54,23 +54,23 @@ public class Users {
 	@Size(min = 4, max = 30)
 	private String companyName;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Account> accountList;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Customers> customerList;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Vendors> vendorList;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "user" )
 	private List<Invoice> invoiceList;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Journal> journalList;
 	

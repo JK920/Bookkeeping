@@ -4,8 +4,7 @@ import java.util.List;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -35,7 +34,7 @@ public class Vendors {
 	@Size(max=8)
 	private String vendorId;
 	
-	@JsonBackReference
+	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="userId")
 	@NotNull
@@ -55,7 +54,7 @@ public class Vendors {
 	@Email
 	private String email;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "vendor")
 	private List<Journal> journalList;
 	

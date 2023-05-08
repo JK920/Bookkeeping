@@ -5,8 +5,7 @@ import java.util.List;
 import org.hibernate.annotations.GenericGenerator;
 
 import com.cts.project.bookkeeping.model.AccountType;
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -36,7 +35,7 @@ public class Account {
 	@Size(max=8)
 	private String accountId;
 	
-	@JsonBackReference
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="userId")
 	@NotNull
@@ -53,11 +52,11 @@ public class Account {
 	@NotNull
 	private double balance;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "account")
 	private List<Journal> journalList;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "account")
 	private List<Ledger> ledgerList;
 	

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import axios from "axios";
 import './Register.css';
 import Navbar from './Navbar';
+import UserService from '../service/UserService';
+import { Navigate } from 'react-router-dom';
 
 export default class Register extends Component{
 
@@ -50,17 +51,19 @@ export default class Register extends Component{
             password : this.state.password,
             email : this.state.email,
             companyName : this.state.companyName,
+            success: false
         }
         
         const password = this.state.password;
         const confirmPassword = this.state.confirmPassword;
         if(password === confirmPassword){
-            axios.post('http://localhost:8080/create/user',user)
+            UserService.registerUser(user)
             .then(response =>{
                 const id = response.data.userId;
                 if(response.status===200){
                     alert('User Registered with ID:'+id);
                     document.getElementById('res').innerHTML='You are Registered';
+                    this.setState({success:true})
                 }
             })
             .catch((err)=>{
@@ -75,9 +78,11 @@ export default class Register extends Component{
     }
 
     render(){
+        if(this.state.success){
+            return <Navigate to="/login"/>;
+        }
         return(
         <div className="container-fluid top">
-        {/* <Navbar/>       */}
         <div className="align">
         <h1>Register</h1>
         <div className="center">

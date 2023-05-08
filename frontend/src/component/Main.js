@@ -10,7 +10,13 @@ import Journal from './images/journal.svg'
 
 export default class Main extends Component{
 
+    constructor(props){
+        super(props);
+    }
+    
+    
     render(){
+
         return(
             <>
             <NavbarMain/>
@@ -21,14 +27,14 @@ export default class Main extends Component{
                             <li className="section1">
                                 <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/dashboard'>
                                     <button className="btn btn-toggle btn-outline-dark text-start rounded collapsed" >
-                                    <img src={Dash} alt=""/>
+                                    <img src={Dash} alt="dashboard"/>
                                     Dashboard
                                     </button>
                                 </Link>
                             </li>
                             <li className="section1">
                                 <button className="btn btn-toggle btn-outline-dark text-start rounded collapsed" data-bs-toggle="collapse" data-bs-target="#acc-collapse" aria-expanded="false">
-                                    <img src={Coin} alt=""/>
+                                    <img src={Coin} alt="account"/>
                                     Account
                                 </button>
                                 <div className="collapse " id="acc-collapse" >
@@ -41,7 +47,7 @@ export default class Main extends Component{
                             </li>
                             <li className="section1">
                                 <button className="btn btn-toggle btn-outline-dark text-start rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customer-collapse" aria-expanded="false">
-                                    <img src={Cust} alt=""/>
+                                    <img src={Cust} alt="customer"/>
                                     Customer
                                 </button>
                                 <div className="collapse" id="customer-collapse">
@@ -56,7 +62,7 @@ export default class Main extends Component{
                             </li>
                             <li className="section1">
                                 <button className="btn btn-toggle btn-outline-dark text-start rounded collapsed" data-bs-toggle="collapse" data-bs-target="#vendor-collapse" aria-expanded="false">
-                                    <img src={Vendor}/>
+                                    <img src={Vendor} alt="vendor"/>
                                     Vendors
                                 </button>
                                 <div className="collapse" id="vendor-collapse">
@@ -71,7 +77,7 @@ export default class Main extends Component{
                             </li>
                             <li className="section1">
                                 <button className="btn btn-toggle btn-outline-dark text-start rounded collapsed" data-bs-toggle="collapse" data-bs-target="#journal-collapse" aria-expanded="false">
-                                    <img src={Journal}/>
+                                    <img src={Journal} alt="journal"/>
                                     Journals
                                 </button>
                                 <div className="collapse " id="journal-collapse">

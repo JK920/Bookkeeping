@@ -4,8 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -33,7 +32,6 @@ public class Invoice {
 	@Size(max=8)
 	private String invoiceId;
 	
-	@JsonBackReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="userId")
 	@NotNull
@@ -62,7 +60,7 @@ public class Invoice {
 	
 	private boolean paid;
 	
-	@JsonManagedReference
+	@JsonIgnore
 	@OneToMany(mappedBy = "invoice")
 	private List<Journal> journalList;
 	

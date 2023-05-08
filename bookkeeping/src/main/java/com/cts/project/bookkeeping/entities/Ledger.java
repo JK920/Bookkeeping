@@ -1,7 +1,5 @@
 package com.cts.project.bookkeeping.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -26,7 +24,7 @@ public class Ledger {
 	
 	private double balance;
 	
-	@JsonBackReference
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="accountId")
 	private Account account;
