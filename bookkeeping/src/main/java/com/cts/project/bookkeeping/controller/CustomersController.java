@@ -50,9 +50,9 @@ public class CustomersController {
 		return cService.getCustomerByName(name, userId);
 	}
 	
-	@PutMapping(value = "/update/user/{userId}/customers/{custId}")
-	public ResponseEntity<Object> updateCustomerDetails(@Valid @RequestBody CustomerModel customer, @PathVariable("custId") String custId, @PathVariable("userId") String userId) throws CustomersNotFoundException{
-		Customers cust =cService.updateCustomerDetails(customer, custId, userId);
+	@PutMapping(value = "/update/user/customers/{custId}")
+	public ResponseEntity<Object> updateCustomerDetails(@Valid @RequestBody CustomerModel customer, @PathVariable("custId") String custId) throws CustomersNotFoundException{
+		Customers cust =cService.updateCustomerDetails(customer, custId);
 		return new ResponseEntity<>(cust,HttpStatus.OK);
 	}
 	

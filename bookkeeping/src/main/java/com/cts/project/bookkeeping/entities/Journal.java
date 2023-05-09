@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -43,7 +44,7 @@ public class Journal {
 	@PastOrPresent
 	private LocalDate date;
 	
-	
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="accountId")
 	@NotNull
@@ -56,14 +57,17 @@ public class Journal {
 	@Size(max = 100)
 	private String description;
 	
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="invoiceId")
 	private Invoice invoice;
 	
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="vendorId")
 	private Vendors vendor;
 	
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="customerId")
 	private Customers customer;
@@ -72,6 +76,7 @@ public class Journal {
 	
 	private double credit;
 	
+	@JsonIgnore
 	@OneToOne(fetch=FetchType.LAZY, mappedBy="journal")
 	private Ledger ledger;
 	

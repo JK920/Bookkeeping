@@ -124,13 +124,13 @@ class CustomerServiceTest {
 	void testUpdateCustomerDetails() throws CustomersNotFoundException {
 		when(uS.getUserById("u1")).thenReturn(user);
 		when(cR.save(any(Customers.class))).thenReturn(c);
-		assertEquals(c, cS.updateCustomerDetails(cm, "c", "u1"));
+		assertEquals(c, cS.updateCustomerDetails(cm, "c"));
 	}
 	
 	@Test
 	void testUpdateCustomerDetails_CustomerNotFound() throws CustomersNotFoundException {
 		when(uS.getUserById("u1")).thenReturn(user);
-		assertThrows(CustomersNotFoundException.class,()-> cS.updateCustomerDetails(cm, "c3","u1"));
+		assertThrows(CustomersNotFoundException.class,()-> cS.updateCustomerDetails(cm, "c3"));
 	}
 	
 	@Test

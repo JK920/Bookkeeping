@@ -20,7 +20,6 @@ export default class ViewCustomer extends Component{
             })
     }
 
-    
     render(){
         return(
             <div className="container-fluid">

@@ -23,7 +23,7 @@ export default class ViewAccount extends Component{
                 
                 <table className="table">
                     <thead>
-                        <tr>
+                        <tr key="1">
                             <th scope="col">ID</th>
                             <th scope="col">Account Name</th>
                             <th scope="col">Account Type</th>

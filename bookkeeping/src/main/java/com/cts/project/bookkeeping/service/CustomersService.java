@@ -79,10 +79,10 @@ public class CustomersService {
 	
 	
 	@Transactional
-	public Customers updateCustomerDetails(CustomerModel customer, String id, String userId) throws CustomersNotFoundException{
+	public Customers updateCustomerDetails(CustomerModel customer, String id) throws CustomersNotFoundException{
 		Customers cust = null;
 	
-		cust = getCustomerById(id, userId);
+		cust = getCustomerById(id, customer.getUserId());
 		cust.setName(customer.getName());
 		cust.setEmail(customer.getEmail());
 		cust.setPhoneNo(customer.getPhoneNo());

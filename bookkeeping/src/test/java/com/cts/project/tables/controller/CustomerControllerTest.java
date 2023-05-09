@@ -137,10 +137,10 @@ class CustomerControllerTest {
 	@Test
 	void testUpdateCustomers() throws Exception {
 		String exp = objectMapper.writeValueAsString(c);
-		when(cS.updateCustomerDetails(any(CustomerModel.class), anyString(), anyString())).thenReturn(c);
+		when(cS.updateCustomerDetails(any(CustomerModel.class), anyString())).thenReturn(c);
 		
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
-				.put("/update/user/u1/customers/c1")
+				.put("/update/user/customers/c1")
 				.accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(cm))
 				.contentType(MediaType.APPLICATION_JSON);
 		

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import CustomerService from "../../service/CustomerService";
+import InvoiceService from "../../service/InvoiceService";
 
 export default class AddInvoice extends Component{
 
@@ -66,7 +67,13 @@ export default class AddInvoice extends Component{
             costPrice:this.state.cogs,
             paid:this.state.isPaid
         }
-        console.log(inv);
+        InvoiceService.addInvoice(inv)
+        .then(res=>{
+            document.getElementById('res').innerHTML= "Invoice Added";
+        })
+        .catch(err=>{
+            console.log(err.data.message);
+        })
     }
     componentDidMount(){ 
         CustomerService.viewCustomers(localStorage.getItem("userId"))
@@ -104,10 +111,11 @@ export default class AddInvoice extends Component{
                         <input type='text' onChange={this.handleCogsChange} id="cogs" value={this.state.cogs} className='form-control' required/>
                         <div className="my-2">
                         <label style={{margin:'5px'}} className='form-check-label' >Paid</label>
-                        <input type='checkbox' onChange={this.handlePaid} id="cogs" value={this.state.cogs} className='form-check-input' style={{margin:'10px'}} required/>
+                        <input type='checkbox' onChange={this.handlePaid} id="cogs" value={this.state.cogs} className='form-check-input' style={{margin:'10px'}}/>
                         </div>
                         <button type='submit' className='btn btn-primary'>Add Invoice</button>
                     </form>
+                    <div id="res"></div>
             </div>
         );
     }

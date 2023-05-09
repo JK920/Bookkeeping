@@ -12,6 +12,9 @@ class InvoiceService extends Component{
     viewInvoices(userId){
         return axios.get("http://localhost:8080/get/user/"+userId+"/invoices");
     }
+    deleteInvoice(invId,userId){
+        return axios.delete("http://localhost:8080/delete/user/"+userId+"/invoice/"+invId);
+    }
 
 }
 export default new InvoiceService()

@@ -7,12 +7,12 @@ class CustomerService extends Component{
         return axios.get("http://localhost:8080/get/user/"+userId+"/customers");
     }
 
-    modifyCustomer(userId,custId,acc){
-        return axios.put("http://localhost:8080/update/user/"+userId+"/customers/"+custId,acc);
+    modifyCustomer(custId,cust){
+        return axios.put("http://localhost:8080/update/user/customers/"+custId,cust);
     }
 
-    addCustomer(acc){
-        return axios.post("http://localhost:8080/create/customer",acc);
+    addCustomer(cust){
+        return axios.post("http://localhost:8080/create/customer",cust);
     }
 }
 export default new CustomerService()
