@@ -60,14 +60,16 @@ class JournalControllerTest {
 		j = new Journal(jm.getDate(), jm.getReference(), jm.getDescription(), 0, 0);
 	}
 
+
+	
 	@Test
-	void testCreateJournalEntry() throws Exception {
+	void testAddJournalEntry() throws Exception {
 		
-		String exp = objectMapper.writeValueAsString(j);
-		when(jS.createJournalEntry(any(JournalModel.class))).thenReturn(j);
+		String exp = "All Entries Completed";
+		when(jS.addJournalList(any())).thenReturn("All Entries Completed");
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
-				.post("/create/journal")
-				.accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(jm))
+				.post("/add/journalentries")
+				.accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(List.of(jm)))
 				.contentType(MediaType.APPLICATION_JSON);
 		
 		MvcResult result = mockMvc.perform(requestBuilder).andReturn();

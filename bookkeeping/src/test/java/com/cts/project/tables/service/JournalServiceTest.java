@@ -2,6 +2,7 @@ package com.cts.project.tables.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -102,12 +103,12 @@ class JournalServiceTest {
 	@Test
 	void testCreateJournal_CustomerModel() throws RuntimeException {
 		j.setCustomer(c);
-		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), "", c.getName(), 0, 0);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountId(), "", "", i.getInvoiceId(), "", c.getCustomerId(), 0, 0);
 		when(uS.getUserById("u1")).thenReturn(u);
-		when(aS.getAccountByName("a", "u")).thenReturn(a);
-		when(cS.getCustomerByName("Sam", "u")).thenReturn(c);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(cS.getCustomerById(anyString(), anyString())).thenReturn(c);
 		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
-		when(jR.save(any(Journal.class))).thenReturn(j);
+		when(jR.saveAndFlush(any(Journal.class))).thenReturn(j);
 		Journal j1 = jS.createJournalEntry(jm);
 		assertEquals(j, j1);
 	}
@@ -115,12 +116,12 @@ class JournalServiceTest {
 	@Test
 	void testCreateJournal_VendorModel() throws RuntimeException  {
 		j.setVendor(v);
-		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), v.getName(), "", 0, 0);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), v.getVendorId(), "", 0, 0);
 		when(uS.getUserById("u1")).thenReturn(u);
-		when(aS.getAccountByName("a", "u")).thenReturn(a);
-		when(vS.getVendorByName("Ram", "u1")).thenReturn(v);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(vS.getVendorById(anyString(), anyString())).thenReturn(v);
 		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
-		when(jR.save(any(Journal.class))).thenReturn(j);
+		when(jR.saveAndFlush(any(Journal.class))).thenReturn(j);
 		Journal j1 = jS.createJournalEntry(jm);
 		assertEquals(j, j1);
 	}
@@ -128,13 +129,37 @@ class JournalServiceTest {
 	@Test
 	void testCreateJournal_NotFound() throws RuntimeException  {
 		j.setVendor(v);
-		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountName(), "", "", i.getInvoiceId(), v.getName(), "", 0, 0);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountId(), "", "", i.getInvoiceId(), v.getVendorId(), "", 0, 0);
 		when(uS.getUserById("u1")).thenThrow(UserNotFoundException.class);
-		when(aS.getAccountByName("a", "u")).thenReturn(a);
-		when(vS.getVendorByName("Ram", "u1")).thenReturn(v);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(vS.getVendorById(anyString(), anyString())).thenReturn(v);
 		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
-		when(jR.save(any(Journal.class))).thenReturn(j);
+		when(jR.saveAndFlush(any(Journal.class))).thenReturn(j);
 		assertThrows(UserNotFoundException.class, ()-> jS.createJournalEntry(jm));
+	}
+	
+	@Test
+	void testAddJournalList() throws RuntimeException{
+		j.setCustomer(c);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountId(), "", "", i.getInvoiceId(), "", c.getCustomerId(), 0, 0);
+		when(uS.getUserById("u1")).thenReturn(u);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(cS.getCustomerById(anyString(), anyString())).thenReturn(c);
+		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
+		when(jR.saveAndFlush(any(Journal.class))).thenReturn(j);
+		assertEquals("All Entries Completed",jS.addJournalList(List.of(jm)));
+	}
+	
+	@Test
+	void testAddJournalList_NotFound() throws RuntimeException{
+		j.setVendor(v);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountId(), "", "", i.getInvoiceId(), v.getVendorId(), "", 0, 0);
+		when(uS.getUserById("u1")).thenThrow(UserNotFoundException.class);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(vS.getVendorById(anyString(), anyString())).thenReturn(v);
+		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
+		when(jR.saveAndFlush(any(Journal.class))).thenReturn(j);
+		assertThrows(RuntimeException.class,()->jS.addJournalList(List.of(jm)));
 	}
 	
 	@Test
@@ -168,39 +193,39 @@ class JournalServiceTest {
 	@Test
 	void testModifyJournal() throws RuntimeException{
 		j.setLedger(l);
-		jm = new JournalModel(u.getUserId(), LocalDate.now(), a2.getAccountName(), "", "", i.getInvoiceId(), "", c.getName(), 0, 0);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a2.getAccountId(), "", "", i.getInvoiceId(), "", c.getCustomerId(), 0, 0);
 		Journal j2 = j;
 		j2.setAccount(a2);
 		j2.setCustomer(c);
 		
 		when(uS.getUserById("u1")).thenReturn(u);
-		when(aS.getAccountByName("a", "u")).thenReturn(a);
-		when(cS.getCustomerByName("Sam", "u")).thenReturn(c);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(cS.getCustomerById(anyString(), anyString())).thenReturn(c);
 		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
-		when(jR.save(any(Journal.class))).thenReturn(j2);
+		when(jR.saveAndFlush(any(Journal.class))).thenReturn(j2);
 		
 		assertEquals(j2, jS.modifyJournal(jm, "j1"));
 		verify(aS,times(1)).updateAccountBalance(any(Journal.class));
-		verify(lR,times(1)).save(any(Ledger.class));
+		verify(lR,times(1)).saveAndFlush(any(Ledger.class));
 		
 		
 	}
 	@Test
 	void testModifyJournal_NotFound() throws RuntimeException{
 		j.setLedger(l);
-		jm = new JournalModel(u.getUserId(), LocalDate.now(), a2.getAccountName(), "", "", i.getInvoiceId(), "", c.getName(), 0, 0);
+		jm = new JournalModel(u.getUserId(), LocalDate.now(), a2.getAccountId(), "", "", i.getInvoiceId(), "", c.getCustomerId(), 0, 0);
 		Journal j2 = j;
 		j2.setAccount(a2);
 		j2.setCustomer(c);
 		
 		when(uS.getUserById("u1")).thenThrow(UserNotFoundException.class);
-		when(aS.getAccountByName("a", "u")).thenReturn(a);
-		when(cS.getCustomerByName("Sam", "u")).thenReturn(c);
+		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
+		when(cS.getCustomerById(anyString(), anyString())).thenReturn(c);
 		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);
 		when(jR.save(any(Journal.class))).thenReturn(j2);
 		
 		verify(aS,times(0)).updateAccountBalance(any(Journal.class));
-		verify(lR,times(0)).save(any(Ledger.class));
+		verify(lR,times(0)).saveAndFlush(any(Ledger.class));
 		assertThrows(UserNotFoundException.class,()-> jS.modifyJournal(jm, "j1"));
 		
 	}

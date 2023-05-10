@@ -28,12 +28,13 @@ public class JournalsController {
 	@Autowired
 	JournalService jService;
 	
-	@PostMapping(value = "/create/journal")
-	public ResponseEntity<Object> createJournalEntry(@Valid @RequestBody JournalModel journal) {
-		Journal j = jService.createJournalEntry(journal);
-		return new ResponseEntity<>(j,HttpStatus.OK);
-	}
 	
+	@PostMapping(value = "/add/journalentries")
+	public ResponseEntity<Object> createJournalEntry(@Valid @RequestBody List<JournalModel> jL) {
+		String x  = jService.addJournalList(jL);
+		return new ResponseEntity<>(x,HttpStatus.OK);
+	}
+		
 	@GetMapping(value = "/get/user/{userId}/journals")
 	public List<Journal> getJournalsOfUser(@PathVariable("userId") String userId) {
 		return jService.getJournalsOfUser(userId);

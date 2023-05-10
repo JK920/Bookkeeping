@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JournalServiceTest.testAddJournalList" project="bookkeeping" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cts.project.tables.service.JournalServiceTest" time="0.083" displayname="JournalServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.service.JournalServiceTest]">
+    <testcase name="testAddJournalList" classname="com.cts.project.tables.service.JournalServiceTest" time="0.083" displayname="testAddJournalList()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.service.JournalServiceTest]/[method:testAddJournalList()]"/>
+  </testsuite>
+</testrun>

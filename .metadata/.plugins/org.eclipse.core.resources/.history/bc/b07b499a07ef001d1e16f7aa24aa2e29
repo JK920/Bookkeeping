@@ -1,0 +1,159 @@
+package com.cts.project.bookkeeping.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cts.project.bookkeeping.entities.Account;
+import com.cts.project.bookkeeping.entities.Customers;
+import com.cts.project.bookkeeping.entities.Invoice;
+import com.cts.project.bookkeeping.entities.Journal;
+import com.cts.project.bookkeeping.entities.Ledger;
+import com.cts.project.bookkeeping.entities.Users;
+import com.cts.project.bookkeeping.entities.Vendors;
+import com.cts.project.bookkeeping.exception.JournalNotFoundException;
+import com.cts.project.bookkeeping.exception.UserNotFoundException;
+import com.cts.project.bookkeeping.model.JournalModel;
+import com.cts.project.bookkeeping.repository.JournalRepository;
+import com.cts.project.bookkeeping.repository.LedgerRepository;
+
+import jakarta.transaction.Transactional;
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
+@Service
+public class JournalService {
+
+	@Autowired
+	JournalRepository jRepo;
+	@Autowired
+	UsersService uService;
+	@Autowired
+	AccountService aService;
+	@Autowired
+	CustomersService cService;
+	@Autowired
+	VendorsService vService;
+	@Autowired
+	InvoiceService iService;
+	@Autowired
+	LedgerRepository lRepo;
+	
+	
+	
+	@Transactional
+	public Journal createJournalEntry(JournalModel journal) throws RuntimeException{
+		
+		Journal j = new Journal(journal.getDate(),journal.getReference(),journal.getDescription(),
+				journal.getDebit(),journal.getCredit());
+		
+		Users user = uService.getUserById(journal.getUserId());
+		Account acc = aService.getAccountByName(journal.getAccountName(),journal.getUserId());
+		Customers cust = null;
+		if(!journal.getCustomerName().trim().equals("")) {
+			cust = cService.getCustomerByName(journal.getCustomerName(),journal.getUserId());
+			
+		}
+		Vendors ven = null;
+		if(!journal.getVendorName().trim().equals("")) {
+			ven = vService.getVendorByName(journal.getVendorName(),journal.getUserId());
+			
+		}
+		Invoice inv = iService.getInvoiceById(journal.getInvoiceId(),journal.getUserId());
+
+		
+		j.setUser(user);
+		j.setCustomer(cust);
+		j.setVendor(ven);
+		j.setAccount(acc);
+		j.setInvoice(inv);
+		
+		j = jRepo.save(j);
+		
+		double bal = aService.updateAccountBalance(j);
+		
+		Ledger l = new Ledger();
+		l.setAccount(acc);
+		l.setBalance(bal);
+		l.setJournal(j);
+		lRepo.save(l);
+		
+		log.info("Entry Created");
+
+		return j;
+		
+	}
+	
+	
+	@Transactional
+	public Journal getJournalById(String id, String userId) throws JournalNotFoundException{
+		List<Journal> journalList = getJournalsOfUser(userId);
+		for(Journal j: journalList) {
+			if(j.getJournalId().equals(id)) {
+				return j;
+			}
+		}
+		throw new JournalNotFoundException("Journal Not Found");
+	}
+	
+	@Transactional
+	public List<Journal> getJournalsOfUser(String userId) throws UserNotFoundException{
+		Users user = uService.getUserById(userId);
+		return user.getJournalList();
+	}
+	
+	
+	@Transactional
+	public Journal modifyJournal(JournalModel journal,String journalId)throws RuntimeException{
+		
+		String userId = journal.getUserId();
+		Journal j = getJournalById(journalId, userId);
+		Ledger l = j.getLedger();
+		
+		deleteJournalEntry(journalId, userId);
+		
+		Account acc = aService.getAccountByName(journal.getAccountName(),userId);
+		Customers cust=null;
+		if(!journal.getCustomerName().trim().equals("")) {
+			cust = cService.getCustomerByName(journal.getCustomerName(),journal.getUserId());
+			
+		}
+		Vendors ven = null;
+		if(!journal.getVendorName().trim().equals("")) {
+			ven = vService.getVendorByName(journal.getVendorName(),journal.getUserId());
+			
+		}
+
+		Invoice inv = iService.getInvoiceById(journal.getInvoiceId(),userId);
+		
+		j.setDate(journal.getDate());
+		j.setReference(journal.getReference());
+		j.setDescription(journal.getDescription());
+		j.setCredit(journal.getCredit());
+		j.setDebit(journal.getDebit());
+		j.setAccount(acc);
+		j.setInvoice(inv);
+		j.setCustomer(cust);
+		j.setVendor(ven);
+		j = jRepo.save(j);
+		
+		double balance = aService.updateAccountBalance(j);
+		
+		l.setBalance(balance);
+		lRepo.save(l);
+
+		return j;
+	}
+	
+	
+	@Transactional
+	public void deleteJournalEntry(String id,String userId) throws JournalNotFoundException{
+
+		Journal j = getJournalById(id, userId);
+		aService.updateAccountBalanceForJournalDeletion(j);
+		Ledger l = j.getLedger();
+		lRepo.delete(l);
+		jRepo.delete(j);
+	}
+	
+}

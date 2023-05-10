@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JournalControllerTest" project="bookkeeping" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cts.project.tables.controller.JournalControllerTest" time="0.433" displayname="JournalControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]">
+    <testcase name="testGetJournalById" classname="com.cts.project.tables.controller.JournalControllerTest" time="0.268" displayname="testGetJournalById()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]/[method:testGetJournalById()]"/>
+    <testcase name="testUpdateJournal" classname="com.cts.project.tables.controller.JournalControllerTest" time="0.071" displayname="testUpdateJournal()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]/[method:testUpdateJournal()]"/>
+    <testcase name="testGetJournalsOfUsers" classname="com.cts.project.tables.controller.JournalControllerTest" time="0.016" displayname="testGetJournalsOfUsers()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]/[method:testGetJournalsOfUsers()]"/>
+    <testcase name="testDeleteJournalEntry" classname="com.cts.project.tables.controller.JournalControllerTest" time="0.016" displayname="testDeleteJournalEntry()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]/[method:testDeleteJournalEntry()]"/>
+    <testcase name="testAddJournalEntry" classname="com.cts.project.tables.controller.JournalControllerTest" time="0.053" displayname="testAddJournalEntry()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]/[method:testAddJournalEntry()]"/>
+  </testsuite>
+</testrun>

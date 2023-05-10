@@ -1,0 +1,64 @@
+package com.cts.project.bookkeeping.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cts.project.bookkeeping.entities.Journal;
+import com.cts.project.bookkeeping.exception.JournalNotFoundException;
+import com.cts.project.bookkeeping.model.JournalModel;
+import com.cts.project.bookkeeping.service.JournalService;
+
+import jakarta.validation.Valid;
+
+@CrossOrigin(origins="http://localhost:3000")
+@RestController
+public class JournalsController {
+	
+	@Autowired
+	JournalService jService;
+	
+	@PostMapping(value = "/create/journal")
+	public ResponseEntity<Object> createJournalEntry(@Valid @RequestBody JournalModel journal) {
+		Journal j = jService.createJournalEntry(journal);
+		return new ResponseEntity<>(j,HttpStatus.OK);
+	}
+	
+	@PostMapping(value = "/add/journalentries")
+	public ResponseEntity<Object> createJournalEntry(@Valid @RequestBody List<JournalModel> jL) {
+		String x  = jService.addJournalList(jL);
+		return new ResponseEntity<>(x,HttpStatus.OK);
+	}
+		
+	@GetMapping(value = "/get/user/{userId}/journals")
+	public List<Journal> getJournalsOfUser(@PathVariable("userId") String userId) {
+		return jService.getJournalsOfUser(userId);
+	}
+	
+	@GetMapping(value = "/get/user/{userId}/journals/{journalId}")
+	public Journal getJournalById(@PathVariable("journalId") String journalId,@PathVariable("userId") String userId) throws JournalNotFoundException{	
+		return jService.getJournalById(journalId, userId);
+	}
+	@PutMapping(value = "/update/user/journals/{journalId}")
+	public ResponseEntity<Object> modifyJournal(@Valid @RequestBody JournalModel journal,@PathVariable("journalId") String journalId){
+		Journal j = jService.modifyJournal(journal, journalId);
+		return new ResponseEntity<>(j,HttpStatus.OK);
+	}
+	@DeleteMapping(value = "/delete/user/{userId}/journals/{journalId}")
+	public ResponseEntity<Object> deleteJournalEntry(@PathVariable("journalId") String journalId,@PathVariable("userId")String userId) throws JournalNotFoundException{
+		jService.deleteJournalEntry(journalId, userId);
+		return new ResponseEntity<>("Journal Deleted",HttpStatus.OK);
+	}
+	
+
+}

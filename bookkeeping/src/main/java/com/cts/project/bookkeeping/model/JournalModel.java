@@ -17,12 +17,12 @@ public class JournalModel {
 	
 	private String userId;
 	private LocalDate date;
-	private String accountName;
+	private String accountId;
 	private String reference;
 	private String description;
 	private String invoiceId;
-	private String vendorName;
-	private String customerName;
+	private String vendorId;
+	private String customerId;
 	private double debit;
 	private double credit;
 	

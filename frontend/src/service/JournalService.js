@@ -9,5 +9,8 @@ class JournalService {
     viewJournal(userId){
         return axios.get("http://localhost:8080/get/user/"+userId+"/journals");
     }
+    addJournalEntries(journalList){
+        return axios.post("http://localhost:8080/add/journalentries",journalList);
+    }
 }
 export default new JournalService()

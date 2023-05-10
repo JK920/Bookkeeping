@@ -13,5 +13,13 @@ class AccountService extends Component{
     updateOpeningBalance(userId,map){
         return axios.put("http://localhost:8080/update/users/"+userId+"/openingbalances",map);
     }
+
+    accountByName(userId,accName){
+        return axios.get("http://localhost:8080/get/users/"+userId+"/accountsbyname/"+accName);
+    }
+
+    totalByAccount(userId,type){
+        return axios.get("http://localhost:8080/get/users/"+userId+"/accountbalance/"+type);
+    }
 }
 export default new AccountService()

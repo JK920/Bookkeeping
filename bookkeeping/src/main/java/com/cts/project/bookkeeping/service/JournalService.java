@@ -40,7 +40,6 @@ public class JournalService {
 	LedgerRepository lRepo;
 	
 	
-	
 	@Transactional
 	public Journal createJournalEntry(JournalModel journal) throws RuntimeException{
 		
@@ -48,19 +47,21 @@ public class JournalService {
 				journal.getDebit(),journal.getCredit());
 		
 		Users user = uService.getUserById(journal.getUserId());
-		Account acc = aService.getAccountByName(journal.getAccountName(),journal.getUserId());
+		Account acc = aService.getAccountById(journal.getAccountId(),journal.getUserId());
 		Customers cust = null;
-		if(!journal.getCustomerName().trim().equals("")) {
-			cust = cService.getCustomerByName(journal.getCustomerName(),journal.getUserId());
+		if(!journal.getCustomerId().trim().equals("")) {
+			cust = cService.getCustomerById(journal.getCustomerId(),journal.getUserId());
 			
 		}
 		Vendors ven = null;
-		if(!journal.getVendorName().trim().equals("")) {
-			ven = vService.getVendorByName(journal.getVendorName(),journal.getUserId());
+		if(!journal.getVendorId().trim().equals("")) {
+			ven = vService.getVendorById(journal.getVendorId(),journal.getUserId());
 			
 		}
-		Invoice inv = iService.getInvoiceById(journal.getInvoiceId(),journal.getUserId());
-
+		Invoice inv=null;
+		if(!journal.getInvoiceId().trim().equals("")) {
+			inv = iService.getInvoiceById(journal.getInvoiceId(),journal.getUserId());
+		}
 		
 		j.setUser(user);
 		j.setCustomer(cust);
@@ -68,7 +69,7 @@ public class JournalService {
 		j.setAccount(acc);
 		j.setInvoice(inv);
 		
-		j = jRepo.save(j);
+		j = jRepo.saveAndFlush(j);
 		
 		double bal = aService.updateAccountBalance(j);
 		
@@ -76,7 +77,7 @@ public class JournalService {
 		l.setAccount(acc);
 		l.setBalance(bal);
 		l.setJournal(j);
-		lRepo.save(l);
+		lRepo.saveAndFlush(l);
 		
 		log.info("Entry Created");
 
@@ -84,6 +85,12 @@ public class JournalService {
 		
 	}
 	
+	public String addJournalList(List<JournalModel> jL) throws RuntimeException{
+		for(JournalModel j : jL) {
+			createJournalEntry(j);
+		}
+		return "All Entries Completed";
+	}
 	
 	@Transactional
 	public Journal getJournalById(String id, String userId) throws JournalNotFoundException{
@@ -112,15 +119,15 @@ public class JournalService {
 		
 		deleteJournalEntry(journalId, userId);
 		
-		Account acc = aService.getAccountByName(journal.getAccountName(),userId);
+		Account acc = aService.getAccountById(journal.getAccountId(),userId);
 		Customers cust=null;
-		if(!journal.getCustomerName().trim().equals("")) {
-			cust = cService.getCustomerByName(journal.getCustomerName(),journal.getUserId());
+		if(!journal.getCustomerId().trim().equals("")) {
+			cust = cService.getCustomerById(journal.getCustomerId(),journal.getUserId());
 			
 		}
 		Vendors ven = null;
-		if(!journal.getVendorName().trim().equals("")) {
-			ven = vService.getVendorByName(journal.getVendorName(),journal.getUserId());
+		if(!journal.getVendorId().trim().equals("")) {
+			ven = vService.getVendorById(journal.getVendorId(),journal.getUserId());
 			
 		}
 
@@ -135,12 +142,12 @@ public class JournalService {
 		j.setInvoice(inv);
 		j.setCustomer(cust);
 		j.setVendor(ven);
-		j = jRepo.save(j);
+		j = jRepo.saveAndFlush(j);
 		
 		double balance = aService.updateAccountBalance(j);
 		
 		l.setBalance(balance);
-		lRepo.save(l);
+		lRepo.saveAndFlush(l);
 
 		return j;
 	}
