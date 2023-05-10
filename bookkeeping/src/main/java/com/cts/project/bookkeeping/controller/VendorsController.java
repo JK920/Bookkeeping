@@ -49,9 +49,9 @@ public class VendorsController {
 		return vService.getVendorByName(name, userId);
 	}
 	
-	@PutMapping(value = "update/user/{userId}/vendors/{venId}")
-	public ResponseEntity<Object> updateVendorDetails(@Valid @RequestBody VendorModel vendor,@PathVariable("venId") String venId,@PathVariable("userId") String userId) {
-		Vendors ven = vService.updateVendorDetails(vendor, venId, userId);
+	@PutMapping(value = "update/user/vendors/{venId}")
+	public ResponseEntity<Object> updateVendorDetails(@Valid @RequestBody VendorModel vendor,@PathVariable("venId") String venId) {
+		Vendors ven = vService.updateVendorDetails(vendor, venId);
 		return new ResponseEntity<>(ven, HttpStatus.OK);
 	}
 	

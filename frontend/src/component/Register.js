@@ -59,9 +59,8 @@ export default class Register extends Component{
         if(password === confirmPassword){
             UserService.registerUser(user)
             .then(response =>{
-                const id = response.data.userId;
                 if(response.status===200){
-                    alert('User Registered with ID:'+id);
+                    alert('User Registered');
                     document.getElementById('res').innerHTML='You are Registered';
                     this.setState({success:true})
                 }

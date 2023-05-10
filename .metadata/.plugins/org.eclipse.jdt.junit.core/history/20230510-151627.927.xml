@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="JournalServiceTest.testAddJournalList_NotFound" project="bookkeeping" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.cts.project.tables.service.JournalServiceTest" time="0.075" displayname="JournalServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.service.JournalServiceTest]">
-    <testcase name="testAddJournalList_NotFound" classname="com.cts.project.tables.service.JournalServiceTest" time="0.075" displayname="testAddJournalList_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.service.JournalServiceTest]/[method:testAddJournalList_NotFound()]"/>
-  </testsuite>
-</testrun>

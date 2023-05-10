@@ -49,6 +49,7 @@ export default class AddVendor extends Component{
     render(){
         return(
             <div className=" container-fluid">
+                <h2>Add Vendor</h2>
                 <form className=" p-5" onSubmit={this.submitVendorHanlder}>
                     <label className='form-label'>Vendor Name</label>
                     <input type='text' onChange={this.handleNameChange} className='form-control' required/>

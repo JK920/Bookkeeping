@@ -20,6 +20,7 @@ export default class ViewVendors extends Component{
     render(){
         return(
             <div className="container-fluid">
+                <h2>Vendors List</h2>
                 <table className="table">
                     <thead>
                         <tr>

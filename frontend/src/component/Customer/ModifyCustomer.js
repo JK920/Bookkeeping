@@ -46,8 +46,8 @@ export default class ModifyCustomer extends Component{
         }
         console.log(cust);
         CustomerService.modifyCustomer(id,cust)
-        .then(res=>{
-            console.log(res.data);
+        .then(()=>{
+            document.getElementById("res").innerHTML="Customer Details Updated";
         })
         .catch(err=>{
             console.log(err.response.data.message);
@@ -56,6 +56,7 @@ export default class ModifyCustomer extends Component{
     render(){
         return(
             <div className=" container-fluid" onSubmit={this.submitModifyHandler}>
+                <h2>Modify Customer Details</h2>
                     <form className=" p-5">
                         <label className='form-label'>Customer Id</label>
                         <input type='text' onChange={this.handleIdChange} className='form-control' required/>
@@ -69,6 +70,7 @@ export default class ModifyCustomer extends Component{
                         <input type='email' onChange={this.handleEmailChange} className='form-control'/>
                         <button type='submit' className='btn btn-primary'>Modify Customer</button>
                     </form>
+                    <div id="res"></div>
             </div>
         );
     }

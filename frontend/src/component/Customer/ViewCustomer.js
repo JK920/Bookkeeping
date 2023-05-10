@@ -23,7 +23,7 @@ export default class ViewCustomer extends Component{
     render(){
         return(
             <div className="container-fluid">
-                
+                <h2>Customers List</h2>
                 <table className="table">
                     <thead>
                         <tr>

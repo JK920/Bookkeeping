@@ -137,10 +137,10 @@ class VendorControllerTest {
 	@Test
 	void testUpdateVendors() throws Exception {
 		String exp = objectMapper.writeValueAsString(v);
-		when(vS.updateVendorDetails(any(VendorModel.class), anyString(), anyString())).thenReturn(v);
+		when(vS.updateVendorDetails(any(VendorModel.class), anyString())).thenReturn(v);
 		
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
-				.put("/update/user/u1/vendors/c1")
+				.put("/update/user/vendors/c1")
 				.accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(vm))
 				.contentType(MediaType.APPLICATION_JSON);
 		

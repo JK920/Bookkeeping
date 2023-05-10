@@ -1,0 +1,238 @@
+package com.cts.project.tables.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.DirtiesContext;
+
+import com.cts.project.bookkeeping.TablesApplication;
+import com.cts.project.bookkeeping.entities.Account;
+import com.cts.project.bookkeeping.entities.Customers;
+import com.cts.project.bookkeeping.entities.Invoice;
+import com.cts.project.bookkeeping.entities.Journal;
+import com.cts.project.bookkeeping.entities.Ledger;
+import com.cts.project.bookkeeping.entities.Users;
+import com.cts.project.bookkeeping.entities.Vendors;
+import com.cts.project.bookkeeping.exception.InvoiceNotFoundException;
+import com.cts.project.bookkeeping.model.AccountType;
+import com.cts.project.bookkeeping.model.InvoiceModel;
+import com.cts.project.bookkeeping.repository.InvoiceRepository;
+import com.cts.project.bookkeeping.repository.JournalRepository;
+import com.cts.project.bookkeeping.repository.LedgerRepository;
+import com.cts.project.bookkeeping.service.AccountService;
+import com.cts.project.bookkeeping.service.CustomersService;
+import com.cts.project.bookkeeping.service.InvoiceService;
+import com.cts.project.bookkeeping.service.UsersService;
+import com.cts.project.bookkeeping.service.VendorsService;
+
+
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(classes = TablesApplication.class)
+@DirtiesContext
+class InvoiceServiceTest {
+
+	
+	@Mock
+	UsersService uS;
+	@Mock
+	AccountService aS;
+	@Mock
+	CustomersService cS;
+	@Mock
+	VendorsService vS;
+	@Mock
+	InvoiceRepository iR;
+	@Mock
+	JournalRepository jR;
+	@Mock
+	LedgerRepository lR;
+	
+	@InjectMocks
+	InvoiceService iS;
+	
+	private Users u;
+	private InvoiceModel im1;
+	private InvoiceModel im2;
+	private Invoice i1;
+	private Invoice i2;
+	private Invoice i3;
+	private Invoice i4;
+	private Customers c;
+	private Vendors v;
+
+	private Account cash;
+	private Account payable;
+	private Account receivable;
+	private Account sales;
+	private Account cogs;
+	private Account inventory;
+	private Account salesTax;
+	List<Invoice> iL = new ArrayList<>();
+	@BeforeEach
+	public void setUp() {
+		u = new Users("User", "username", "pass", "email", "company");
+		u.setUserId("u1");;
+		
+		cash = new Account("Cash", AccountType.ASSET, 0.0);
+		cash.setAccountId("1");
+		payable = new Account("Accounts Payable",AccountType.LIABILITY,0);
+		payable.setAccountId("2");
+		sales = new Account("Sales Revenue",AccountType.REVENUE,0);
+		sales.setAccountId("3");
+		cogs = new Account("Cost Of Goods Sold",AccountType.EXPENSE,0);
+		cogs.setAccountId("4");
+		inventory = new Account("Inventory", AccountType.EQUITY,0);
+		inventory.setAccountId("5");
+		salesTax = new Account("Sales Tax Payable", AccountType.LIABILITY,0);
+		salesTax.setAccountId("6");
+		receivable = new Account("Accounts Receivable",AccountType.ASSET,0);
+		receivable.setAccountId("7");
+		
+		c= new Customers(u, "customer", "address", "98765432310", "email");
+		c.setCustomerId("1");
+		v = new Vendors(u, "vendor","address", "98765432310", "email");
+		v.setVendorId("1");
+		
+
+		im1 = new InvoiceModel("u1", "i1", LocalDate.now(), LocalDate.now(), "company", "customer", 2.0, 1000, 10, false);
+		im2 = new InvoiceModel("u1", "i1", LocalDate.now(), LocalDate.now(), "vendor", "company", 2.0, 1000, 10, false);
+		i1 = new Invoice(im1.getInvoiceId(), u, im1.getInvoiceDate(), im1.getDueDate(), im1.getBilledBy(), im1.getBilledTo(), im1.getTaxPercentage(), im1.getTotalAmount(),false);
+		i2= new Invoice("i2", u, im1.getInvoiceDate(), im1.getDueDate(), im1.getBilledBy(), "customer", im1.getTaxPercentage(), im1.getTotalAmount(), true);
+		i3=new Invoice("i3", u, im2.getInvoiceDate(), im2.getDueDate(), im2.getBilledBy(), im2.getBilledTo(), im2.getTaxPercentage(), im2.getTotalAmount(), false);
+		i4=new Invoice("i4", u, im2.getInvoiceDate(), im2.getDueDate(),im2.getBilledBy(), im2.getBilledTo(), im2.getTaxPercentage(), im2.getTotalAmount(), true);
+		
+		u.setAccountList(List.of(cash,payable,inventory,sales,cogs,salesTax,receivable));
+		u.setCustomerList(List.of(c));
+		u.setVendorList(List.of(v));
+		iL.add(i1);
+		iL.add(i2);
+		iL.add(i3);
+		iL.add(i4);
+		u.setInvoiceList(iL);
+		when(uS.getUserById("u1")).thenReturn(u);
+		when(aS.getAccountByName("Cash", "u1")).thenReturn(cash);
+		when(aS.getAccountByName("Accounts Payable", "u1")).thenReturn(payable);
+		when(aS.getAccountByName("Sales Revenue", "u1")).thenReturn(sales);
+		when(aS.getAccountByName("Cost Of Goods Sold", "u1")).thenReturn(cogs);
+		when(aS.getAccountByName("Inventory", "u1")).thenReturn(inventory);
+		when(aS.getAccountByName("Sales Tax Payable", "u1")).thenReturn(salesTax);
+		when(aS.getAccountByName("Accounts Receivable", "u1")).thenReturn(receivable);
+		when(jR.saveAndFlush(any(Journal.class))).thenAnswer(i->i.getArguments()[0]);
+		
+	}
+
+	@Test
+	void testAddInvoice_InvoiceToCutomerNotPaid() {
+		
+		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i1);
+		when(cS.getCustomerById(anyString(), anyString())).thenReturn(c);
+		Invoice inv = iS.addInvoice(im1);
+		assertEquals(i1, inv);
+		verify(jR, times(5)).saveAndFlush(any(Journal.class));
+		verify(lR, times(5)).saveAndFlush(any(Ledger.class));
+		
+		
+	}
+	
+	@Test
+	void testAddInvoice_InvoiceToCutomerPaid() {
+		im1.setPaid(true);
+		im1.setTaxPercentage(0);
+		i2.setTaxPercentage(0);
+		when(cS.getCustomerById(anyString(), anyString())).thenReturn(c);
+		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i2);
+		Invoice inv = iS.addInvoice(im1);
+		assertEquals(i2, inv);
+		verify(jR, times(4)).saveAndFlush(any(Journal.class));
+		verify(lR, times(4)).saveAndFlush(any(Ledger.class));
+	}
+	
+	@Test
+	void testAddInvoice_InvoiceForCompanyNotPaid() {
+//		when(uS.getUserById("u1")).thenReturn(u);
+//		when(aS.getAccountByName("Cash", "u1")).thenReturn(cash);
+//		when(aS.getAccountByName("Accounts Payable", "u1")).thenReturn(payable);
+//		when(aS.getAccountByName("Sales Revenue", "u1")).thenReturn(sales);
+//		when(aS.getAccountByName("Cost Of Goods Sold", "u1")).thenReturn(cogs);
+//		when(aS.getAccountByName("Inventory", "u1")).thenReturn(inventory);
+//		when(aS.getAccountByName("Sales Tax Payable", "u1")).thenReturn(salesTax);
+//		when(aS.getAccountByName("Accounts Receivable", "u1")).thenReturn(receivable);
+//		when(jR.saveAndFlush(any(Journal.class))).thenAnswer(i->i.getArguments()[0]);
+		when(vS.getVendorById(anyString(), anyString())).thenReturn(v);
+		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i3);
+		Invoice inv = iS.addInvoice(im2);
+		assertEquals(i3, inv);
+		verify(jR, times(3)).saveAndFlush(any(Journal.class));
+		verify(lR, times(3)).saveAndFlush(any(Ledger.class));
+	}
+	
+	@Test
+	void testAddInvoice_InvoiceForCompanyPaid() {
+		im2.setPaid(true);
+//		when(uS.getUserById("u1")).thenReturn(u);
+//		when(aS.getAccountByName("Cash", "u1")).thenReturn(cash);
+//		when(aS.getAccountByName("Accounts Payable", "u1")).thenReturn(payable);
+//		when(aS.getAccountByName("Sales Revenue", "u1")).thenReturn(sales);
+//		when(aS.getAccountByName("Cost Of Goods Sold", "u1")).thenReturn(cogs);
+//		when(aS.getAccountByName("Inventory", "u1")).thenReturn(inventory);
+//		when(aS.getAccountByName("Sales Tax Payable", "u1")).thenReturn(salesTax);
+//		when(aS.getAccountByName("Accounts Receivable", "u1")).thenReturn(receivable);
+//		when(jR.saveAndFlush(any(Journal.class))).thenAnswer(i->i.getArguments()[0]);
+		when(vS.getVendorById(anyString(), anyString())).thenReturn(v);
+		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i4);
+		Invoice inv = iS.addInvoice(im2);
+		assertEquals(i4, inv);
+		verify(jR, times(3)).saveAndFlush(any(Journal.class));
+		verify(lR, times(3)).saveAndFlush(any(Ledger.class));
+	}
+
+	@Test
+	void testUpdateJournalWhenInvoicePaidByCustomer() {
+		i1.setPaid(true);
+		when(iR.save(any(Invoice.class))).thenReturn(i1);
+		iS.updateJournalWhenInvoicePaid("i1", "u1");
+		
+		verify(jR, times(2)).saveAndFlush(any(Journal.class));
+		verify(lR, times(2)).saveAndFlush(any(Ledger.class));
+	}
+	
+	@Test
+	void testUpdateJournalWhenInvoicePaidByCompany() {
+		i3.setPaid(true);
+		when(iR.save(any(Invoice.class))).thenReturn(i3);
+		iS.updateJournalWhenInvoicePaid("i3", "u1");
+		
+		verify(jR, times(2)).saveAndFlush(any(Journal.class));
+		verify(lR, times(2)).saveAndFlush(any(Ledger.class));
+	}
+	
+	@Test
+	void testInvoiceRemainderForUser() {
+		
+		List<Invoice> invL =  iS.invoiceRemaiderForUser("u1");
+		assertIterableEquals(List.of(i1,i3),invL);
+		
+	}
+	
+	@Test
+	void testgetInvoiceById_InvoiceNotFound() throws InvoiceNotFoundException {
+		
+		assertThrows(InvoiceNotFoundException.class,() -> iS.getInvoiceById("i5", "u1"));
+		
+	}
+}

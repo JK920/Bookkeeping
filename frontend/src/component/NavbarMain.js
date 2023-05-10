@@ -12,9 +12,9 @@ export default class NavbarMain extends Component{
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item"><a className="nav-link" href="#Profile">Profile</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#About">About</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#Help">Help</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/main/profile">Profile</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/main/about">About</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/main/help">Help</a></li>
                         <li className="nav-item"><a className="nav-link" href="/logout">Logout</a></li>
                     </ul>
                 </div>

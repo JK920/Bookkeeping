@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="JournalControllerTest.testAddJournalEntry" project="bookkeeping" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.cts.project.tables.controller.JournalControllerTest" time="0.355" displayname="JournalControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]">
-    <testcase name="testAddJournalEntry" classname="com.cts.project.tables.controller.JournalControllerTest" time="0.355" displayname="testAddJournalEntry()" uniqueid="[engine:junit-jupiter]/[class:com.cts.project.tables.controller.JournalControllerTest]/[method:testAddJournalEntry()]"/>
-  </testsuite>
-</testrun>

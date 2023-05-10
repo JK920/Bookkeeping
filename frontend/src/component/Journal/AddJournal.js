@@ -69,7 +69,10 @@ export default class AddJournal extends Component{
             }
             l.push(j);
         }
-        JournalService.addJournalEntries(l).then(res=>{console.log(res.data)});
+        JournalService.addJournalEntries(l)
+        .then(res=>{
+            alert("Journal Entries Added");
+        });
     }
 
     componentDidMount(){
@@ -102,6 +105,7 @@ export default class AddJournal extends Component{
     render(){
         return(
             <div className="container-fluid">
+                <h2>Add Journal Entries</h2>
                 <form style={{width:'inherit'}} >
                     <label className="form-label">Date</label>
                     <input onChange={this.handleDateChange} className="form-control" type="date"/>
@@ -175,6 +179,7 @@ export default class AddJournal extends Component{
                     <br/>
                     <button onClick={this.handleSubmitJournal} type="submit" className="btn btn-primary my-5">Submit</button>             
                 </form>
+                <div id="res"></div>
             </div>
         );
     }

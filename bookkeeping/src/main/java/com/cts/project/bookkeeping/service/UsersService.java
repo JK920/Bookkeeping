@@ -123,8 +123,8 @@ public class UsersService {
 		else {
 			Users u=userL.get(0);
 		
-		if(u.getPassword().equals(pass.getOldPass())) {
-			u.setPassword(pass.getNewPass());
+		if(u.getPassword().equals(pH.hashPassword(pass.getOldPass()))) {
+			u.setPassword(pH.hashPassword(pass.getNewPass()));
 			uRepo.save(u);
 			return "Password Changed";
 		}

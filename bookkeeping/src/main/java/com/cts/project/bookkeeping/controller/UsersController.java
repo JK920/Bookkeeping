@@ -59,9 +59,9 @@ public class UsersController {
 		Users u = uService.updateUserById(user, userId);
 		return new ResponseEntity<>(u,HttpStatus.OK);
 	}
-	@PutMapping(value="/update/user/{userId}/password")
-	public String updatePass(@PathVariable("userId") String userId,@RequestBody PasswordChange pass){
-		return uService.updatePassword(userId, pass);
+	@PutMapping(value="/update/user/{email}/password")
+	public String updatePass(@PathVariable("email") String email,@RequestBody PasswordChange pass){
+		return uService.updatePassword(email, pass);
 	}
 	
 	

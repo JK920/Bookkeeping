@@ -77,8 +77,8 @@ public class VendorsService {
 	}
 	//update
 	@Transactional
-	public Vendors updateVendorDetails(VendorModel vendor, String id, String userId) throws VendorNotFoundException{
-		Vendors ven = getVendorById(id, userId);
+	public Vendors updateVendorDetails(VendorModel vendor, String id) throws VendorNotFoundException{
+		Vendors ven = getVendorById(id, vendor.getUserId());
 		ven.setName(vendor.getName());
 		ven.setEmail(vendor.getEmail());
 		ven.setPhoneNo(vendor.getPhoneNo());

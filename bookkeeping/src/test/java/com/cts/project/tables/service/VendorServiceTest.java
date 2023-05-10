@@ -124,13 +124,13 @@ class VendorServiceTest {
 	void testUpdateVendorDetails() throws VendorNotFoundException {
 		when(uS.getUserById("u1")).thenReturn(user);
 		when(vR.save(any(Vendors.class))).thenReturn(v);
-		assertEquals(v, vS.updateVendorDetails(vm, "v", "u1"));
+		assertEquals(v, vS.updateVendorDetails(vm, "v"));
 	}
 	
 	@Test
 	void testUpdateVendorDetails_VendorNotFound() throws VendorNotFoundException {
 		when(uS.getUserById("u1")).thenReturn(user);
-		assertThrows(VendorNotFoundException.class,()-> vS.updateVendorDetails(vm, "v3","u1"));
+		assertThrows(VendorNotFoundException.class,()-> vS.updateVendorDetails(vm, "v3"));
 	}
 	
 	@Test

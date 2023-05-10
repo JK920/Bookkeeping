@@ -21,7 +21,7 @@ export default class ViewJournal extends Component{
     render(){
         return(
             <div className="container-fluid">
-                
+                <h2>Journal</h2>
                 <table className="table">
                     <thead>
                         <tr>
@@ -41,7 +41,7 @@ export default class ViewJournal extends Component{
                                 <tr>
                                     <td>{journal.journalId}</td>
                                     <td>{journal.date}</td>
-                                    <td>{journal.accountId}</td>
+                                    <td>{journal.account.accountId}</td>
                                     <td>{journal.reference}</td>
                                     <td>{journal.description}</td>
                                     <td>{journal.debit}</td>

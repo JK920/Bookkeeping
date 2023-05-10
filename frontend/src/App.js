@@ -9,6 +9,7 @@ import Register from './component/Register';
 import Logout from './component/Logout';
 
 import Main from './component/Main';
+import Profile from './component/Profile';
 import Dashboard from './component/Dashboard/Dashboard';
 import AddAccount from './component/Account/AddAccount';
 import ViewAccount from './component/Account/ViewAccount';
@@ -28,20 +29,11 @@ import ViewVendors from './component/Vendor/ViewVendors';
 
 import AddJournal from './component/Journal/AddJournal';
 import ViewJournal from './component/Journal/ViewJournal';
-import axios from 'axios';
-import AccountService from './service/AccountService';
+import Ledger from './component/Journal/Ledger';
+import Help from './component/Help';
+import About from './component/About';
 
 function App() {
-
-
-
-  const onLoginHandler= (loginData) =>{
-
-      localStorage.setItem("userId",loginData.userId);
-      localStorage.setItem("username",loginData.username);
-      localStorage.setItem("company",loginData.company);
-  };
-
 
 
   return (    
@@ -50,13 +42,18 @@ function App() {
                   <Route path="/" element={<Home/>}>
                     <Route index element={<HomeContent />} />
                     <Route path="/register" element={<Register/>} />
-                    <Route path="/login" element={<Login onLogin={onLoginHandler}/>} />
+                    <Route path="/login" element={<Login />} />
                     <Route path='/logout' element={<Logout/>}/> 
+                    <Route path='/help' element={<Help/>}/>
+                    <Route path='/about' element={<About/>}/>
                   </Route>
                   <Route path="/main" element={<Main/>}>
                     <Route index  element={<Dashboard/>} />
                     <Route path='/main/dashboard' element={<Dashboard/>} />
-
+                    <Route path='/main/profile' element={<Profile/>} />
+                    <Route path='/main/help' element={<Help/>}/>
+                    <Route path='/main/about' element={<About/>}/>
+                    
                     <Route path="/main/accountschart" element={<ViewAccount />} />
                     <Route path="/main/addaccount" element={<AddAccount />} />
                     <Route path="/main/openingbalances" element={<OpeningBalances/>} />
@@ -74,7 +71,8 @@ function App() {
                     <Route path="/main/viewvendors" element={<ViewVendors/>} />
                     
                     <Route path="/main/addjournal" element={<AddJournal/>} />
-                    <Route path="/main/ViewJournal" element={<ViewJournal/>} />
+                    <Route path="/main/viewjournal" element={<ViewJournal/>} />
+                    <Route path="/main/ledger" element={<Ledger/>} />
                   </Route>
                 </Routes>
             </BrowserRouter>

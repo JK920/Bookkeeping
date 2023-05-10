@@ -87,6 +87,7 @@ export default class AddInvoice extends Component{
     render(){
         return(
             <div className=" container-fluid" onSubmit={this.submitInvoiceHandler}>
+                <h2>Add Invoice</h2>
                     <form className=" p-5">
                         <label className='form-label'>Invoice Id</label>
                         <input type='text' onChange={this.handleInvoiceIdChange} id="invoiceId" value={this.state.invoiceId} className='form-control' required/>

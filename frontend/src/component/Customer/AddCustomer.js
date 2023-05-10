@@ -54,6 +54,7 @@ export default class AddCustomer extends Component{
     render(){
         return(
             <div className=" container-fluid">
+                <h2>Add Customer</h2>
                 <form className=" p-5" onSubmit={this.customerSubmitHandler}>
                     <label className='form-label'>Customer Name</label>
                     <input type='text' onChange={this.nameChangeHandler} value={this.state.name} className='form-control' required/>

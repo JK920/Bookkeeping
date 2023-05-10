@@ -53,7 +53,7 @@ export default class Main extends Component{
                                     <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/viewcustomer' ><span className="btn btn-outline text-start btn-sm my-0">View Customer</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/addcustomer' ><span className="btn btn-outline text-start btn-sm my-0">Add Customer</span></Link></li>
-                                        {/* <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/modifycustomer' ><span className="btn btn-outline text-start btn-sm my-0">Modify Customer</span></Link></li> */}
+                                        <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/modifycustomer' ><span className="btn btn-outline text-start btn-sm my-0">Modify Customer</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/viewinvoice' ><span className="btn btn-outline text-start btn-sm my-0">View Invoice</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/addinvoice' ><span className="btn btn-outline text-start btn-sm my-0">Add Invoice</span></Link></li>
                                     </ul>       
@@ -68,7 +68,7 @@ export default class Main extends Component{
                                     <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/viewvendors' ><span className="btn btn-outline text-start btn-sm my-0">View Vendors</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/addvendor' ><span className="btn btn-outline text-start btn-sm my-0">Add Vendor</span></Link></li>
-                                        {/* <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/modifyvendor' ><span className="btn btn-outline text-start btn-sm my-0">Modify Vendor</span></Link></li> */}
+                                        <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/modifyvendor' ><span className="btn btn-outline text-start btn-sm my-0">Modify Vendor</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/viewbills' ><span className="btn btn-outline text-start btn-sm my-0">View Bills</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/addbills' ><span className="btn btn-outline text-start btn-sm my-0">Add Bill</span></Link></li>
                                     </ul>
@@ -83,7 +83,7 @@ export default class Main extends Component{
                                     <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/viewjournal' ><span className="btn btn-outline text-start btn-sm">View Journal</span></Link></li>
                                         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/addjournal' ><span className="btn btn-outline text-start btn-sm my-0">Add Journal</span></Link></li>
-
+                                        <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/main/ledger' ><span className="btn btn-outline text-start btn-sm my-0">View Ledger</span></Link></li>
                                     </ul>
                                 </div>
                             </li>

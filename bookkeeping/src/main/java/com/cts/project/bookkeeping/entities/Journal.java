@@ -44,8 +44,8 @@ public class Journal {
 	@PastOrPresent
 	private LocalDate date;
 	
-	@JsonIgnore
-	@ManyToOne(fetch = FetchType.LAZY)
+	
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="accountId")
 	@NotNull
 	private Account account;

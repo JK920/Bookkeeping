@@ -154,7 +154,7 @@ class JournalServiceTest {
 	void testAddJournalList_NotFound() throws RuntimeException{
 		j.setVendor(v);
 		jm = new JournalModel(u.getUserId(), LocalDate.now(), a.getAccountId(), "", "", i.getInvoiceId(), v.getVendorId(), "", 0, 0);
-		when(uS.getUserById("u1")).thenThrow(UserNotFoundException.class);
+		when(uS.getUserById("u1")).thenThrow(RuntimeException.class);
 		when(aS.getAccountById(anyString(), anyString())).thenReturn(a);
 		when(vS.getVendorById(anyString(), anyString())).thenReturn(v);
 		when(iS.getInvoiceById("i1", "u1")).thenReturn(i);

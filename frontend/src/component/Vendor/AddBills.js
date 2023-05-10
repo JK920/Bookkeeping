@@ -79,6 +79,7 @@ export default class AddBills extends Component{
     render(){
         return(
             <div className=" container-fluid">
+                <h2>Add Bill</h2>
                     <form className=" p-5" onSubmit={this.submitBillHandler}>
                         <label className='form-label'>Bill Id</label>
                         <input type='text' onChange={this.handleBillIdChange} className='form-control' required/>

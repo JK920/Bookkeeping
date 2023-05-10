@@ -2,6 +2,7 @@ package com.cts.project.tables.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -139,6 +140,7 @@ class InvoiceServiceTest {
 	void testAddInvoice_InvoiceToCutomerNotPaid() {
 		
 		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i1);
+		when(cS.getCustomerByName(anyString(), anyString())).thenReturn(c);
 		Invoice inv = iS.addInvoice(im1);
 		assertEquals(i1, inv);
 		verify(jR, times(5)).saveAndFlush(any(Journal.class));
@@ -152,15 +154,7 @@ class InvoiceServiceTest {
 		im1.setPaid(true);
 		im1.setTaxPercentage(0);
 		i2.setTaxPercentage(0);
-//		when(uS.getUserById("u1")).thenReturn(u);
-//		when(aS.getAccountByName("Cash", "u1")).thenReturn(cash);
-//		when(aS.getAccountByName("Accounts Payable", "u1")).thenReturn(payable);
-//		when(aS.getAccountByName("Sales Revenue", "u1")).thenReturn(sales);
-//		when(aS.getAccountByName("Cost Of Goods Sold", "u1")).thenReturn(cogs);
-//		when(aS.getAccountByName("Inventory", "u1")).thenReturn(inventory);
-//		when(aS.getAccountByName("Sales Tax Payable", "u1")).thenReturn(salesTax);
-//		when(aS.getAccountByName("Accounts Receivable", "u1")).thenReturn(receivable);
-//		when(jR.saveAndFlush(any(Journal.class))).thenAnswer(i->i.getArguments()[0]);
+		when(cS.getCustomerByName(anyString(), anyString())).thenReturn(c);
 		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i2);
 		Invoice inv = iS.addInvoice(im1);
 		assertEquals(i2, inv);
@@ -170,15 +164,7 @@ class InvoiceServiceTest {
 	
 	@Test
 	void testAddInvoice_InvoiceForCompanyNotPaid() {
-//		when(uS.getUserById("u1")).thenReturn(u);
-//		when(aS.getAccountByName("Cash", "u1")).thenReturn(cash);
-//		when(aS.getAccountByName("Accounts Payable", "u1")).thenReturn(payable);
-//		when(aS.getAccountByName("Sales Revenue", "u1")).thenReturn(sales);
-//		when(aS.getAccountByName("Cost Of Goods Sold", "u1")).thenReturn(cogs);
-//		when(aS.getAccountByName("Inventory", "u1")).thenReturn(inventory);
-//		when(aS.getAccountByName("Sales Tax Payable", "u1")).thenReturn(salesTax);
-//		when(aS.getAccountByName("Accounts Receivable", "u1")).thenReturn(receivable);
-//		when(jR.saveAndFlush(any(Journal.class))).thenAnswer(i->i.getArguments()[0]);
+		when(vS.getVendorByName(anyString(), anyString())).thenReturn(v);
 		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i3);
 		Invoice inv = iS.addInvoice(im2);
 		assertEquals(i3, inv);
@@ -189,15 +175,7 @@ class InvoiceServiceTest {
 	@Test
 	void testAddInvoice_InvoiceForCompanyPaid() {
 		im2.setPaid(true);
-//		when(uS.getUserById("u1")).thenReturn(u);
-//		when(aS.getAccountByName("Cash", "u1")).thenReturn(cash);
-//		when(aS.getAccountByName("Accounts Payable", "u1")).thenReturn(payable);
-//		when(aS.getAccountByName("Sales Revenue", "u1")).thenReturn(sales);
-//		when(aS.getAccountByName("Cost Of Goods Sold", "u1")).thenReturn(cogs);
-//		when(aS.getAccountByName("Inventory", "u1")).thenReturn(inventory);
-//		when(aS.getAccountByName("Sales Tax Payable", "u1")).thenReturn(salesTax);
-//		when(aS.getAccountByName("Accounts Receivable", "u1")).thenReturn(receivable);
-//		when(jR.saveAndFlush(any(Journal.class))).thenAnswer(i->i.getArguments()[0]);
+		when(vS.getVendorByName(anyString(), anyString())).thenReturn(v);
 		when(iR.saveAndFlush(any(Invoice.class))).thenReturn(i4);
 		Invoice inv = iS.addInvoice(im2);
 		assertEquals(i4, inv);

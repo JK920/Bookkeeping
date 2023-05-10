@@ -12,8 +12,8 @@ export default class Navbar extends Component{
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#About">About</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#Help">Help</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/help">Help</a></li>
                         <li className="nav-item"><a className="nav-link" href="/login">Login</a></li>
                         <li className="nav-item"><a className="nav-link" href="/register">Register</a></li>
                     </ul>

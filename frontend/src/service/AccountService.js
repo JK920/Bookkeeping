@@ -21,5 +21,13 @@ class AccountService extends Component{
     totalByAccount(userId,type){
         return axios.get("http://localhost:8080/get/users/"+userId+"/accountbalance/"+type);
     }
+
+    generateLedger(userId){
+        return axios.get("http://localhost:8080/get/users/"+userId+"/ledger");
+    }
+
+    generateIncome(userId){
+        return axios.get("http://localhost:8080/get/users/"+userId+"/income");
+    }
 }
 export default new AccountService()

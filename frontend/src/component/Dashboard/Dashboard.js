@@ -12,7 +12,8 @@ export default class Dashboard extends Component{
             equity:"",
             expense:"",
             payable:"",
-            receivable:""
+            receivable:"",
+            income:""
         };
     }
 
@@ -47,17 +48,22 @@ export default class Dashboard extends Component{
         .then(res=>{
             this.setState({receivable:res.data.balance});
         })
+        AccountService.generateIncome(localStorage.getItem("userId"))
+        .then(res=>{
+            this.setState({income:res.data});
+        })
         
 
     }
     render(){
         return(
             <div className="container-fluid">
+                <h2>Dashboard</h2>
                 <div className="row my-5">
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Payables</h2>
+                                <h3 className="card-title">Total Payables</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.payable}</h4>
@@ -67,10 +73,20 @@ export default class Dashboard extends Component{
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Receivables</h2>
+                                <h3 className="card-title">Total Receivables</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.receivable}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card">
+                            <div className="card-header">
+                                <h3 className="card-title">Income</h3>
+                            </div>
+                            <div className="card-body">
+                                <h4 className="card-title">{this.state.income}</h4>
                             </div>
                         </div>
                     </div>
@@ -79,7 +95,7 @@ export default class Dashboard extends Component{
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Asset</h2>
+                                <h3 className="card-title">Total Asset</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.asset}</h4>
@@ -89,7 +105,7 @@ export default class Dashboard extends Component{
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Liability</h2>
+                                <h3 className="card-title">Total Liability</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.liability}</h4>
@@ -101,7 +117,7 @@ export default class Dashboard extends Component{
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Revenue</h2>
+                                <h3 className="card-title">Total Revenue</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.revenue}</h4>
@@ -111,7 +127,7 @@ export default class Dashboard extends Component{
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Equity</h2>
+                                <h3 className="card-title">Total Equity</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.equity}</h4>
@@ -121,7 +137,7 @@ export default class Dashboard extends Component{
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                <h2 className="card-title">Total Expense</h2>
+                                <h3 className="card-title">Total Expense</h3>
                             </div>
                             <div className="card-body">
                                 <h4 className="card-title">{this.state.expense}</h4>

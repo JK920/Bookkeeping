@@ -32,12 +32,12 @@ export default class Login extends Component{
         UserService.userLogin(login)
         .then(response=>{
             if(response.status===200){
-                const loginObj ={
-                    userId : response.data.userId,
-                    username : response.data.username,
-                    company : response.data.companyName,
-                };
-                this.props.onLogin(loginObj);
+                
+                localStorage.setItem("userId",response.data.userId);
+                localStorage.setItem("username",response.data.username);
+                localStorage.setItem("company",response.data.companyName);
+                localStorage.setItem("name",response.data.name);
+                localStorage.setItem("email",response.data.email);
                 this.setState({success:true});
                 
             }

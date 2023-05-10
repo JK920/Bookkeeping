@@ -53,6 +53,7 @@ export default class AddAccount extends Component{
     render(){
         return(
             <div className=" container-fluid">
+                <h2>Add Account</h2>
                     <form className=" p-5" onSubmit={this.accountSubmitHandler}>
                         <label className='form-label'>Account Name</label>
                         <input type='text' value={this.state.accountName} onChange={this.handleAccountName}  className='form-control' />

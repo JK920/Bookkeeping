@@ -46,12 +46,12 @@ export default class ViewInvoice extends Component{
         
         return(
             <div className="container-fluid">
-                
+                <h2>Invoice List</h2>
                 <table style={{textAlign:'center'}} className="table">
                     <thead>
                         <tr>
                             <th scope="col">Invoice Id</th>
-                            <th scope="col">Customer Name</th>
+                            <th scope="col">Customer Id</th>
                             <th scope="col">Tax</th>
                             <th scope="col">Amount</th>
                             <th scope="col">Paid</th>

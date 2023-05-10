@@ -47,12 +47,12 @@ export default class ViewBills extends Component{
     render(){
         return(
             <div className="container-fluid">
-                
+                <h2>List Of Bills</h2>
                 <table className="table" style={{textAlign:'center'}}>
                     <thead>
                         <tr>
                             <th scope="col">Bill Id</th>
-                            <th scope="col">Vendor Name</th>
+                            <th scope="col">Vendor Id</th>
                             <th scope="col">Tax</th>
                             <th scope="col">Amount</th>
                             <th scope="col">Paid</th>

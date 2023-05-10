@@ -108,6 +108,7 @@ class UsersServiceTest {
 	@Test
 	 void testupdatePassword_success() {
 		when(uRepo.findByEmail(u.getEmail())).thenReturn(List.of(user));
+		when(pH.hashPassword(anyString())).thenReturn("password");
 		assertEquals("Password Changed", uS.updatePassword(u.getEmail(),pass));
 	}
 	

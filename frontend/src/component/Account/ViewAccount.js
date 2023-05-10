@@ -20,7 +20,7 @@ export default class ViewAccount extends Component{
     render(){
         return(
             <div className="container-fluid">
-                
+                <h2>Chart Of Accounts</h2>
                 <table className="table">
                     <thead>
                         <tr key="1">

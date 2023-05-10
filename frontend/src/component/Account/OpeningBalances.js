@@ -47,6 +47,7 @@ export default class OpeningBalances extends Component{
     render(){
         return(
             <div className="container-fluid">
+                <h2>Opening Balances</h2>
                 <table className="table">
                     <thead>
                         <tr>

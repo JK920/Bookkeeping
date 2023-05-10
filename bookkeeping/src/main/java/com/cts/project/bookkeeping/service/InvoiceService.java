@@ -57,8 +57,7 @@ public class InvoiceService {
 		boolean paid = invoice.isPaid();
 		
 		inv = new Invoice(invoice.getInvoiceId(),user,invoice.getInvoiceDate(),invoice.getDueDate(),billedBy,billedTo,
-							tax,totalAmt,paid);
-		inv = iRepo.saveAndFlush(inv);
+				tax,totalAmt,paid);
 		
 		String reference = "";
 		String desc="";
@@ -68,11 +67,14 @@ public class InvoiceService {
 		List<Journal> journalList = new ArrayList<>();
 		//find amount without tax
 		double amt = Math.round((totalAmt*100/(100+tax))*100)/(double)100;
-		double taxAmt =totalAmt - amt;
+		double taxAmt =Math.round((totalAmt - amt)*100)/(double)100;
 		
 		//invoice generated for item sold
 		if(billedBy.equals(user.getCompanyName())) {
+			
 			Customers c = cService.getCustomerByName(billedTo, userId);
+			inv.setBilledTo(c.getCustomerId());
+			inv = iRepo.saveAndFlush(inv);
 			
 			//affected when product is sold
 			Account salesRev = aService.getAccountByName("Sales Revenue", userId);
@@ -151,6 +153,8 @@ public class InvoiceService {
 		else if(billedTo.equals(user.getCompanyName())){
 			
 			Vendors v = vService.getVendorByName(billedBy, userId);
+			inv.setBilledBy(v.getVendorId());
+			inv = iRepo.saveAndFlush(inv);
 			reference = "Product bought";
 			desc = "Cash to be payed to "+billedBy+" for invoice "+invoice.getInvoiceId()+".";
 			
