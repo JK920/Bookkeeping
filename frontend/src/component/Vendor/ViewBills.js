@@ -71,7 +71,7 @@ export default class ViewBills extends Component{
                                 <td>{bill.billedBy}</td>
                                 <td>{bill.taxPercentage}</td>
                                 <td>{bill.totalAmount}</td>
-                                <td><button className="btn btn-outline-light btn-sm" style={{margin:'0'}} onClick={()=>this.payHandler(bill.invoiceId)}>{p}</button></td>
+                                <td><button className="btn btn-outline-dark btn-sm" style={{margin:'0'}} onClick={()=>this.payHandler(bill.invoiceId)}>{p}</button></td>
                                 <td><button className="btn btn-outline-light btn-sm" style={{margin:'0'}} onClick={()=>this.deletebillHandler(bill.invoiceId)}><img style={{margin:'0'}} src={Delete}/></button></td>
                             </tr>)
                         })}

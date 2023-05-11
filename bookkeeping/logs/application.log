@@ -16425,3 +16425,19 @@ List of constraint violations:[
 		                HikariPool-6 - Shutdown initiated...
 10-05-23 21:52:30.675 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
 		                HikariPool-6 - Shutdown completed.
+11-05-23 10:21:36.908 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Starting TablesApplication using Java 17.0.5 with PID 16648 (C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping\target\classes started by Jayakrishnan in C:\Users\Jayakrishnan\Desktop\cts-project-files\Application\bookkeeping)
+11-05-23 10:21:36.923 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                No active profile set, falling back to 1 default profile: "default"
+11-05-23 10:21:42.992 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Starting...
+11-05-23 10:21:43.669 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+		                HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d51f34
+11-05-23 10:21:43.673 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+		                HikariPool-1 - Start completed.
+11-05-23 10:21:51.768 [restartedMain] INFO  c.c.p.bookkeeping.TablesApplication -
+		                Started TablesApplication in 15.843 seconds (process running for 17.448)
+11-05-23 10:22:47.486 [http-nio-8080-exec-1] INFO  c.c.p.b.service.UsersService -
+		                logged in
+11-05-23 10:27:33.465 [http-nio-8080-exec-2] INFO  c.c.p.b.service.UsersService -
+		                logged in

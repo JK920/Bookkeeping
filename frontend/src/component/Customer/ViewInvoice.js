@@ -71,7 +71,7 @@ export default class ViewInvoice extends Component{
                                         <td>{inv.billedTo}</td>
                                         <td>{inv.taxPercentage}</td>
                                         <td>{inv.totalAmount}</td>
-                                        <td><button className="btn btn-outline-light btn-sm" style={{margin:'0'}} onClick={()=>this.payHandler(inv.invoiceId)}>{p}</button></td>
+                                        <td><button className="btn btn-outline-dark btn-sm" style={{margin:'0'}} onClick={()=>this.payHandler(inv.invoiceId)}>{p}</button></td>
                                         <td ><button className="btn btn-outline-light btn-sm" style={{margin:'0'}} onClick={()=>this.deleteInvoiceHandler(inv.invoiceId)}><img style={{margin:'0'}} src={Delete}/></button></td>
                                     </tr>
                                 )
