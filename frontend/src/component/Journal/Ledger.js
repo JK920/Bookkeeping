@@ -25,7 +25,7 @@ export default class Ledger extends Component{
                         if(acc[1].length>0){
                         return(
                             <div>
-                                <h5>{acc[0]}</h5>
+                                <h5><em>{acc[0]}</em></h5>
                                 <table className="table">
                                     <thead>
                                         <tr>
@@ -44,12 +44,12 @@ export default class Ledger extends Component{
                                             return(
                                 
                                                 <tr>
-                                                    <th>{led[0]}</th>
-                                                    <th>{led[1]}</th>
-                                                    <th>{led[2]}</th>
-                                                    <th>{led[3]}</th>
-                                                    <th>{led[4]}</th>
-                                                    <th>{led[5]}</th>
+                                                    <td>{led[0]}</td>
+                                                    <td>{led[1]}</td>
+                                                    <td>{led[2]}</td>
+                                                    <td>{led[3]}</td>
+                                                    <td>{led[4]}</td>
+                                                    <td>{led[5]}</td>
                                                 </tr>
                                         
                                             );
